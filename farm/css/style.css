@@ -1,0 +1,456 @@
+/* 초기화 */
+ *{
+    margin: 0;
+    padding: 0;
+ }
+ img{
+    border : 0;
+ }
+ 
+ body {
+    font: 12px 'Dotum';
+ }
+ 
+ a {
+    text-decoration: none;
+    color: #222;
+ }
+ 
+ ul, ol {
+   		list-style: none;
+ }
+ 
+ #wrapper{
+        width:  980px;
+        margin: 0 auto;
+ }
+ 
+ 
+ /* 헤더영역 */
+ header {
+        width: 980px;
+        height: 136px;
+        background: url('../img/head_top_line.png') no-repeat;
+        position: relative;
+ }
+ 
+ /* 회원가입, 로그인, 고객센터 메뉴 */
+ header > .lnb{
+        width: 190px;
+        position: absolute;
+        right: 0;
+        top: 16px;
+    
+ }
+ /* 로고 */
+ header > a {
+        display: block;
+        width: 190px; height: 64px;
+        position: absolute;
+        left: 50%;
+        margin-left: -95px;
+        top: 26px;
+ }
+ /* GNB */
+ .gnb {
+        position: absolute;
+        bottom: 0px;
+ }
+ 
+ .gnb > li {
+        float: left;
+        width: 196px;
+        height: 35px;
+        background: url('../img/head_menu_line.png') no-repeat;
+        padding-top: 10px;
+ }
+ 
+ .gnb > li > a {
+        display: block;
+        width: 196px;
+        height: 35px;
+ }
+ 
+ .gnb > li:nth-child(1) > a{ background: url('../img/head_menu1.png'); } 
+ .gnb > li:nth-child(2) > a{ background: url('../img/head_menu2.png'); } 
+ .gnb > li:nth-child(3) > a{ background: url('../img/head_menu3.png'); } 
+ .gnb > li:nth-child(4) > a{ background: url('../img/head_menu4.png'); } 
+ .gnb > li:nth-child(5) > a{ background: url('../img/head_menu5.png'); } 
+ 
+ .gnb strong{
+    opacity: 0;
+ }
+ 
+ .gnb > li:nth-child(1) > a:hover { background: url('../img/head_menu1_ov.png'); } 
+ .gnb > li:nth-child(2) > a:hover { background: url('../img/head_menu2_ov.png'); } 
+ .gnb > li:nth-child(3) > a:hover { background: url('../img/head_menu3_ov.png'); } 
+ .gnb > li:nth-child(4) > a:hover { background: url('../img/head_menu4_ov.png'); } 
+ .gnb > li:nth-child(5) > a:hover { background: url('../img/head_menu5_ov.png'); }           
+
+ 
+ /* 컨텐츠영역 */
+ /* 슬라이드이미지 영역 */
+    
+ #content > .slide{
+        position: relative;
+        width: 980px;
+        height: 312px;
+ }
+ 
+ #content > .slide > img{
+   	 position: absolute;
+ }
+ 
+ #content > .slide > .banner{
+        width: 230px;
+        height: 312px;
+        background: url('../img/main_banner_bg.jpg');
+        position: absolute;
+        right: 0;
+ }
+ 
+ #content > .slide > img:nth-child(1){
+        z-index: 10;
+        top: 40px;
+        left: 30px;
+ }
+      
+ .slide > .banner > img:nth-child(1){
+       position: absolute;
+       top: 25px;
+       left: 15px;
+}
+
+.slide > .banner > img:nth-child(2){
+       position: absolute;
+       top: 5px;
+       right: 5px;
+}
+
+
+.slide > .banner > img:nth-child(3){
+       position: absolute;
+       bottom: 5px;
+       left: 15px;
+}
+ 
+ 
+ /* 바로가기 배너 이미지 */
+ #content > .quick {
+        width: 980px;
+        height: 74px;
+        margin-top: 10px;        
+    }   
+ 
+ .quick > a{
+        display: block;
+        float: left;
+        width: 490px; height: 74px;
+ }
+ 
+ .quick > a:nth-child(1) {
+    background: url('../img/main_banner_sub1_bg.jpg');
+ }
+ 
+ 
+ .quick > a:nth-child(2) {
+     background: url('../img/main_banner_sub2_bg.jpg');
+ }
+ 
+ .quick > a > img{
+   	 margin: 10px;
+ }
+            
+
+ /* 최신글리스트(Latest) */
+ #content > .latest {
+      width:980px;
+      height: 160px;
+      margin-top:10px;
+  }
+  
+.latest > div {
+   	 float:left;
+     width:33.33%;
+     height:160px;
+}
+  
+
+.latest > div {
+   	  position: relative;
+}
+
+.latest > div > img:nth-child(1) {
+	  position:absolute;
+	  top:0;
+	  left:0;
+	  margin-top:8px;
+}        
+.latest > div >img:nth-child(2) {
+	  position:absolute;
+	  left:0;
+	  bottom:10px;
+	  margin-top:6px;
+}
+
+.latest > div > table {
+	  position:absolute;
+	  width:214px;
+	  height:104px;
+	  right:4px;
+	  bottom:4px;
+}
+.latest > div > table  tr > td:nth-child(2){
+    width:138px;
+    /*말줄임 속성*/
+    display:block;
+    white-space:nowrap;
+    text-overflow: ellipsis;
+    overflow:hidden;
+}
+
+
+ /* 고객센터안내,계좌정보,탭위젯 */
+ #content > .info {
+    width:980px;
+    height:130px;
+    border-top:2px solid #756c65;
+    margin-top:10px;
+    padding-top:10px;
+ }
+ 
+ .info > div{
+      position:relative;
+      float:left;
+      width:39%;
+      height:130px;
+    
+ }
+ 
+ .info > div:nth-child(1){
+    
+ }    
+ 
+ .info > div:nth-child(2){
+      width:22%;
+      
+ }  
+ 
+ 
+ .info > div:nth-child(3){
+ 
+ }    
+ 
+ .info > div:nth-child(1) > .tit {
+     position:absolute;
+     top:0;
+     left:0;  
+ }
+ 
+ .info > div:nth-child(1) > .img {
+     position:absolute;
+     left:0;
+     top:30px;
+ }
+ 
+ .info > div:nth-child(1) > .txt {
+     position:absolute;
+     top:30px;
+     left:60px;
+ }
+    
+ .info > div:nth-child(1) > div{
+     position:absolute;
+     top:90px;
+     
+ }  
+ 
+ .info > div:nth-child(1) > ul {
+    position:absolute;
+    top:30px;
+    left:200px;
+    color:#555;
+ } 
+ 
+ 
+ .info > div:nth-child(2) > div {
+     height:115px;
+     border-left: 1px solid #d7d7d7;
+     border-right: 1px solid #d7d7d7; 
+     padding-left:20px;  
+ }
+ 
+ .info > div:nth-child(2)  ul {
+	margin-top:10px;
+    color:#555;
+    line-height: 16px;
+ }
+ /* 오른쪽 floattingbanner */
+ 
+  #floattingbanner {
+     width:60px;
+     height:120px;
+     
+     position:fixed;
+     top:136px;
+     right:50%;
+     margin-right:-560px;
+     
+  }
+  
+ 
+ /* 푸터영역 */
+ footer{
+    width: 980px;
+    height: 100px;
+    margin: 0 auto;
+    border-top: 1px solid #c5bd9f;
+ }
+ 
+ /* 푸터로고 */
+
+
+ /* 푸터주소,기타정보 */ 
+     footer > p{
+        display: inline-block;
+        line-height: 16px;
+        padding: 0 0 0 25px;
+     }
+     
+     footer > p > span{
+        font-family: Verdana;
+        color: #888;
+     }
+ /* 서브페이지 */
+ 
+#content > .bg{
+             width:980px;
+             height:184px;
+             background: url('../img/sub_page_img.jpg');
+         }
+         
+         #content > section {
+             overflow:hidden;
+         }
+         
+         #content  aside {
+             float:left;
+             width:176px;
+             min-height:650px;
+             box-sizing:border-box;
+             padding-top:15px;
+             background: url('../img/sub_aside_rt_line.png') no-repeat;
+             background-position: right;
+          }
+          
+          aside > ul {
+              width:175px;
+              height:233px;
+              background: url('../img/sub_aside_bg.png');
+              padding-top:30px;
+              margin-top:10px;
+              box-sizing:border-box;
+          }
+          
+          aside strong {
+             opacity:0;
+          }
+          
+          aside > ul > li {
+         	  width:175px;
+              height:29px;
+              margin-bottom:6px;
+          }
+          
+          aside > ul > li > a {
+          	display: block;
+          	height:29px;
+          	width:175px;
+          }
+          
+          /* 팜스토리소개 서브메뉴 */
+          aside > ul > li:nth-child(1) {background: url('../img/sub_page1_menu1.png');    }
+          aside > ul > li:nth-child(2) {background: url('../img/sub_page1_menu2.png');}
+          aside > ul > li:nth-child(1):hover{background: url('../img/sub_page1_menu1_ov.png'); }
+          aside > ul > li:nth-child(2):hover{background: url('../img/sub_page1_menu2_ov.png'); }
+          
+          
+          aside > ul > li:nth-child(1).on {background: url('../img/sub_page1_menu1.png'); }
+          aside > ul > li:nth-child(2).on {background: url('../img/sub_page1_menu2_ov.png'); }
+          
+          #content  article {
+             float:left;
+             width:804px;
+             min-height:650px;
+             padding-left: 50px;
+             padding-top: 20px;
+             box-sizing: border-box;
+          }
+	       article > img:nth-child(1) {
+	       
+	       }
+       
+	       article > img:nth-child(2) {
+	        position:absolute;
+	        right:198px;
+	        top:36px;
+	       }
+	          
+	       article {
+	        position: relative;
+	       }   
+	          
+	             
+	       
+	       article > img:nth-child(4) {
+	        float:right;
+	        padding-top:38px;
+	       
+	       }
+	       
+	       article > img:nth-child(3) {
+	        padding-top:30px;
+	        border-top:1px solid #9B9999;
+	       }
+	       
+	       article > #intro {
+	         position:absolute;
+	         right:12px;
+	         top:30px;
+	         color:#9b9999;
+	       }
+	       
+	       article > #intro > span {
+	           font-size:13px;
+	           color:#91ba15;
+	       }
+	       
+	       article >  #text {
+	         padding-top:50px;
+	         font-size:11px;
+	         color:#555;
+	         line-height: 16px;
+	       }
+	       
+		       article > #text > span{
+		       font-size:13px;
+		         color:#a8d031;
+	       }  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+    
+ 

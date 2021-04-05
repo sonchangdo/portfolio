@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="jp">
+	<head>
+		<meta charset="utf-8">
+
+		<!-- Always force latest IE rendering engine (even in intranet) & Chrome Frame
+		Remove this if you use the .htaccess -->
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<title>명함 리뉴얼 페이지2</title>
+		<meta name="description" content="">
+		<meta name="author" content="Sonchangdo">
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no," />
+
+		<!-- Replace favicon.ico & apple-touch-icon.png in the root of your domain and delete these references -->
+		<link rel="stylesheet" href="css/swiper.min.css">
+		<script type="text/javascript" src="./js_pc/jquery-1.9.1.min.js"></script>
+		
+		<style>
+		html, body, address, div, span, h1, h2, h3, h4, h5, h6, em, strong, 
+		cite, dfn, code, samp, kbd, var, abbr, acronym, blockquote, q, sub,
+		sup, p, br, pre, ins, del, ul, ol, li, dl, dt, dd, table, caption,
+		thead, tbody, tfoot, tr, th, td, a, object, img, map, tt, i, b, 
+		big, small, form, input, button, select, optgroup, option, 
+		textarea, fieldset, legend {  margin: 0; padding: 0;  }
+		
+		a{text-decoration:none;}
+		
+		p,span,a,div,button{
+			font: 100%/1.5 'メイリオ',Meiryo,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN',MS PGothic,MS Gothic,Sans-serif,Arial;
+		}
+		ol,ul,a{
+			list-style:none;
+			text-decoration:none;
+		}
+		
+		#wraper{
+			width:1000px;
+			background:#ffffff;
+			height:3000px;
+			margin:0 auto;
+			
+		}
+		
+		#m_wraper{
+			display:none;
+		}
+		
+		.vspace_10 { padding: 10px 0 0 0 !important; }
+		.vspace_20 { padding: 20px 0 0 0 !important; }
+		.vspace_30 { padding: 30px 0 0 0 !important; }
+		/*헤더 부분*/
+		/*모바일 슬라이드 코드*/
+	   .swiper-container {
+	        width: 100%;
+	        height: auto;
+	       margin-bottom:0%;/*もとは1.3％*/
+	        
+	    }
+	    .swiper-slide {
+	        text-align: center;
+	        font-size: 18px;
+	        background: #fff;
+	        /* Center slide text vertically */
+	        display: -webkit-box;
+	        display: -ms-flexbox;
+	        display: -webkit-flex;
+	        display: flex;
+	        -webkit-box-pack: center;
+	        -ms-flex-pack: center;
+	        -webkit-justify-content: center;
+	        justify-content: center;
+	        -webkit-box-align: center;
+	        -ms-flex-align: center;
+	        -webkit-align-items: center;
+	        align-items: center;
+	    }
+	    
+	    .swiper-slide  img{
+	    	width:100%;
+	    }
+		
+		.swiper-pagination {display:none;}
+		
+		#product > div{
+			display:inline-block;
+			width:32.55%;
+			background:url('img_pc/filter_paper1.png')no-repeat;
+			height:auto; 
+			margin:2px;
+			margin-bottom:15px;
+			border-top:4px solid #1f9bce;
+			box-shadow: 2px 2px 2px #d8d8d8;
+		}
+		.picture{
+			width:298px;
+			height:198px;
+			margin:0 auto;
+		}
+		.picture:hover{
+			opacity: 0.7;
+		}
+		.paper_name {
+			color:#1f9bce;
+			margin:10px 0px 5px 13px;
+			font-size:21px;
+			font-weight:bold;
+			letter-spacing:0.5px;
+		}
+		.text_box{
+			width:298px;
+			height: auto;
+			margin: 15px auto;
+			text-align:left;
+			font-size:16px;
+		}
+		/* 制作例 */
+		.sample{
+			position: relative;
+		    width: 298px;
+		    height: 43px;
+		    background: #ffffff;
+		    margin: 0 auto;
+		    box-shadow: 1px 1px 1px #cacaca;
+		}
+		.sample > span:nth-child(1) {
+			position:absolute;
+		    font-size: 16px;
+		    top: 7px;
+		    left: 9px;
+		    padding-right: 7px;
+		    height: 28px;
+		    line-height: 32px;
+		    border-right: 0.2px solid #717171;
+		}
+		
+		.sample > span:nth-child(2) {
+			position:absolute;
+		    left: 41px;
+		    top: 3px;
+		    font-size: 13px;
+		    letter-spacing: -0.3px;
+		}
+		
+		.sample > span:nth-child(3) {
+			position:absolute;
+		    left: 42px;
+		    top: 20px;
+		    font-size: 13px;
+		    letter-spacing:1px;
+		}
+		
+		.sample > p:nth-child(4) {
+			position:absolute;
+		    top: 3px;
+		    right: 8px;
+		    font-size: 27px;
+		    color: #ff7246;
+		}
+		
+		.button {
+			width:300px;
+			margin:0 auto;
+		}
+		
+		.button > a:nth-child(1){
+			display:inline-block;
+			width:143px;
+			height:35px;
+			line-height:35px;
+			border-radius:5px;
+			border:1px solid #1f9bce;
+			background:#1f9bce;
+			margin:15px 2px 15px 2px;
+			color:#ffffff;
+			text-align: center;
+			box-sizing:border-box;
+			box-shadow: 1px 1px 1px #cacaca;
+		}
+		
+		.button > a:nth-child(1):hover{
+			color:#ff0;
+			transition:all 0.3s;
+		}
+		
+		.button > a:nth-child(2){
+			display:inline-block;
+			width:143px;
+			height:35px;
+			line-height:35px;
+			border-radius:5px;
+			border:1px solid #ff9d2d;
+			background:#ff9d2d;
+			margin:15px 2px 15px 2px;
+			color:#FFFFFF;
+			text-align:center;
+			box-sizing:border-box;
+			box-shadow: 1px 1px 1px #cacaca;
+		}
+		
+		.button > a:nth-child(2):hover{
+			color:#ff0;
+			transition:all 0.3s;
+		}
+		
+		/*리뷰 부분 시작*/
+		
+		/*리뷰 부분 끝*/
+		
+		/*관련상품 시작 */
+		#related_product{
+			width:100%;
+			margin:0 auto;
+		}
+		
+		#related_product > div{
+	        display: inline-block;
+		    width: 197px;
+		    height: 285px;
+		    margin: 6px -1px 6px -1px;
+		    border: 1px solid #bebebe;
+		    box-sizing: border-box;
+		}
+		
+		.re_product {
+			position:relative;
+			margin-top:5px;
+			/*background:url('img_pc/mata.png')no-repeat;
+			background-position-y: -3px;
+			background-position-x: -2px;*/
+		}
+		
+		
+		.re_product > strong{
+			position:absolute;
+			font-size:18px;
+			left:10px;
+			top:171px;
+			font-weight:bold;
+			color:#666666
+		}
+		
+		.re_product > p{
+			position:absolute;
+			font-size:13px;
+			bottom:62px;
+			left:11px;
+			color:#7d7d7d
+		}
+		
+		.re_product > span:nth-child(4){
+			position:absolute;
+			font-size:13px;
+			top:220px;
+			left:11px;
+			color:#7d7d7d;
+		    letter-spacing: -0.3px;
+		}
+		.re_product > span:nth-child(5){
+			position:absolute;
+			font-size:15px;
+			color:#666666;
+			font-weight:bold;
+			left:10px;
+			bottom:6px;
+		}
+		
+		.re_product > span:nth-child(6){
+			position:absolute;
+			font-size:21px;
+			color:#d40a0a;
+			font-weight:bold;
+			right:10px;
+			bottom:4px;
+		}
+		
+		/*관련상품 끝 */
+		
+		/*칼럼 시작 */
+		#column  ul{
+			width:100%;
+			height:325px;
+			overflow-y: scroll;
+			padding:15px;
+			box-sizing:border-box;
+		}
+		
+		#column  ul  li{
+			position:relative;
+			height:55px;
+		}
+		#column  ul  li  .direct_link{
+			position:absolute;
+			color:#0085bd;
+			font-size:14px;
+			right:10px;
+			bottom:8px;
+		}		
+		/*コラム　スタート 1~20個*/
+		#column > ul > li:nth-child(1){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:2px;  }
+		#column > ul > li:nth-child(2){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(3){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(4){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(5){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(6){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(7){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(8){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(9){	color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(10){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(11){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(12){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(13){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(14){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(15){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(16){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(17){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(18){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(19){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		#column > ul > li:nth-child(20){color:#666666;	border-bottom: 1px dotted #ccc;	padding-bottom:11px; padding-top:13px; }
+		
+		
+		
+		/* 칼럼 끝남 */
+		
+		/* pc用 css*/
+		@media all and (min-width:120px) and (max-width:479px){
+			
+			
+			
+			
+			#wraper{
+				display:none;
+			}
+			#m_wraper{
+				width:94%;
+				display:block;
+				margin:0 auto;
+			}
+			
+			#introduce{
+				background:#2fa6d1;
+				color:#ffffff;
+				text-align: center;
+				font-size:1.125em;
+				line-height:33px;
+				margin-bottom:10px;
+			}
+			
+			.m_box01{
+				width:100%;
+				height:auto;
+				background:#fbfbfb;
+				padding:8px 10px 4px 10px;
+				border-top:3px solid #2fa6d1;
+				box-sizing:border-box;
+				box-shadow: 1px 1px 1px #d8d8d8;
+			}
+			
+			.m_box01 > span{
+				display:block;
+				color:#2fa6d1;
+				font-size:1.313em;
+				margin-bottom:4px;
+			}
+			.m_box01 > img{
+				width:100%;
+				margin-top:2px;
+			}
+			.m_box01 > p{
+				color:#666666;
+				padding:10px 0px 6px 5px;
+				font-size:0.938em;
+				line-height:1.5;
+			}
+			
+			
+		.m_sample{
+			position: relative;
+		    width: 100%;
+		    height: 75px;
+		    background: #fff;
+		    margin: 2px auto 0px auto;
+		}
+		
+		.m_sample > span:nth-child(1) {
+			position:absolute;
+		    font-size: 0.938em;
+		    top:0%;
+		    left:0%;
+		    padding: 6px 4px 4px 10px;
+		    box-sizing:border-box;
+		    height: auto;
+		    color:#ffffff;
+			background:#c7c7c7;
+			line-height:16px;
+			width:100%;
+		}
+		
+		.m_sample > span:nth-child(2) {
+			position:absolute;
+		    left: 2.5%;
+		    top: 44%;
+		    font-size: 0.813em;
+		    color:#666666;
+		    letter-spacing:-0.4px;
+		}
+		
+		.m_sample > span:nth-child(3) {
+			position:absolute;
+		    left: 2.5%;
+		    top: 70%;
+		    font-size: 0.813em;
+		    color:#666666;
+		}
+		
+		.m_sample > p:nth-child(4) {
+			position:absolute;
+		    top: 42%;
+		    right: 2%;
+		    font-size: 1.625em;
+		    color: #ff7246;
+		}
+			
+		.m_button {
+		    width: 100%;
+		    text-align: center;
+		}	
+		.m_button > a:nth-child(1) {
+		    display: inline-block;
+		    width: 47.2%;
+		    height: 39px;
+		    line-height: 39px;
+		    border-radius: 5px;
+		    background: #1f9bce;
+		    margin: 16px 6px 6px 2px;
+		    padding: 1px 6px 0px 2px;
+		    color: #ffffff;
+		    text-align: center;
+		    box-sizing: border-box;
+		    font-size:1.000em;
+		}	
+		.m_button > a:nth-child(2) {
+		    display: inline-block;
+		    width: 47.2%;
+		    height: 37px;
+		    line-height: 37px;
+		    border-radius: 5px;
+		    background: #ff9d2d;
+		    margin: 18px 0px 6px 2px;
+		    padding: 0px 2px 0px 6px;
+		    color: #ffffff;
+		    text-align: center;
+		    box-sizing: border-box;
+		    font-size:1.000em;
+		}
+			
+		.m_re_product{
+			width:94%;
+			margin-top:10px;
+			background:#fbfbfb;
+			height:100%;
+			overflow:hidden;
+			padding:10px;
+			box-shadow: 1px 1px 1px #d8d8d8;
+		}	
+		.m_re_product > img{
+			width:36%; 
+			height:108px;
+			float:left;
+			display:inline-block;
+			margin-right:10px;
+		}	
+		
+		.m_re_product > strong{
+			font-weight:bold;
+			font-size:1.125em;
+			color:#666666;
+		}
+		.m_re_product > p{
+			color:#c81a43;
+			font-size:1.375em;
+		}
+		.m_re_product > span{
+			font-size:0.813em;
+			color:#666666;
+		}	
+		
+		/*review*/
+		.m_re_review{
+			width:94%;
+			margin-top:10px;
+			background:#fbfbfb;
+			height:100%;
+			overflow:hidden;
+			padding:10px;
+			box-shadow: 1px 1px 1px #d8d8d8;
+		}
+		
+		.m_re_review > img{
+			width:36%;
+			height:92px; 
+			float:left;
+			display:inline-block;
+			margin-right:10px;
+		}
+		
+		.m_re_review > strong{
+			font-size:0.938em;
+			color:#666666;
+		}
+		.m_re_review > p{
+			color:#666666;
+			font-size:1em;
+			font-weight:bold;
+		}
+		.m_re_review > span{
+			font-size:0.813em;
+			color:#666666;
+		}	
+		
+		
+		
+		#m_column > ul {
+			border:1px solid #cccccc;
+			height:266px;
+			overflow:scroll;
+			padding:10px;
+			overflow-x:hidden;
+			margin-top:3px;
+		}
+		
+		#m_column > ul > li:nth-child(1) {
+			margin-top:3px;
+		}
+		
+		#m_column > ul > li {
+			font-size:0.938em;
+			margin-bottom:15px;
+			margin-left:5px;
+		}
+		
+		#m_column > ul > li > a{
+			font-size:0.938em;
+		
+		}
+			
+			
+	}
+		@media all and (min-width:320px) and (max-width:375px){
+		
+	}
+		</style>
+	</head>
+
+	<body>
+		<style>
+			#main-top {position: relative; height:55px;}
+			#main-top > p:first-child{font-size:40px; font-weight:bold; display:inline-block; position:absolute; top:10px;}
+			#main-top > ul {position:absolute; right:288px; top:6px;}
+			#main-top > ul > li {display:inline-block;}
+			#main-top > div {display:inline-block; position:absolute; right:0px; background: url('img_pc/main-top-phonebox.png')no-repeat; width:275px;height:68px; top:6px; }
+			
+			#nav_menu {width:100%; height:45px; line-height:45px; border-top: 1px solid #666666; border-bottom: 1px solid #666666; }
+			#nav_menu  li {float:left; text-align: center; color:#444444; font-weight:bold; background:url('img_pc/menu_line.png') left no-repeat }
+			#nav_menu  li:first-child{background:none; width:164px; }
+			#nav_menu  li:nth-child(2){width:227px; }
+			#nav_menu  li:nth-child(3){width:179px; }
+			#nav_menu  li:nth-child(4){width:132px; }
+			#nav_menu  li:nth-child(5){width:148px; }
+			#nav_menu  li:nth-child(6){width:148px; }
+			#nav_menu  li > a {text-decoration: none; list-style: none;color:#666666; font-weight:bold;}
+			#nav_menu  li > a:hover{color:#4285f4; }
+			.meishi_submain_menubar { height: 60px; text-align: center; }
+			.meishi_submain_menubar ul { content: ''; display: block; clear: both !important; }
+			.meishi_submain_menubar ul li { float:left !important; border-left: 1px solid #fff;}
+			/* menu_hover */
+			.meishi_submain_menubar ul li a:hover { background: #73ddf9; color: #FFFF00; text-decoration: none; }
+			.meishi_submain_menubar ul li:first-child { border-left: none;}
+			.meishi_submain_menubar ul li a { display: inline-block; background: #2fa6d1 url(default.css) no-repeat; color: #FFFFFF; text-decoration: none;}
+			.meishi_submain_menubar ul li a div {height: 60px; text-align: center;}
+			.meishi_submain_menubar ul li a span { display: table-cell; width: 99.1px; height: 45px; text-align: center; vertical-align: middle; line-height: 1.3; }
+			
+		</style>
+		<div id="wraper">
+			<img src="img_pc/header.png" alt="header" />
+			<div id="main-top">
+				<p>名刺・カード印刷</p>
+				<ul>
+					<li style="margin-right:3px;">
+						<img src="img_pc/test_logo01.png" style="padding:4px 8px 4px 6px; background:#eaeaea;"/>
+					</li>
+					<li>
+						<img src="img_pc/test_logo02.png" style="padding:4px 8px 4px 6px; background:#eaeaea;"/>
+					</li>
+				</ul>
+				<div>
+					<span style="font-size: 26px;position:inherit;left: 16px;top:0px;font-weight: bold;color: #333333;">☎050-8882-5225</span><br>
+					<span style="font-size: 12.5px;position: inherit;top: 40px;left: 16px;color: #333333;font-weight: bold;">平日10:00~17:00 ※土・日・祝日は休み</span><br>
+				</div>
+			</div>
+			<!-- nav -->
+			<br>
+			<ul id="nav_menu"> 
+				<li><a href="http://www.adprint.jp/dataIntro/datamaking.aspx" target="_blank">データ作成方法</a></li>
+				<li><a href="http://www.adprint.jp/dataintro/detaAgency.aspx" target="_blank">データ作成代行サービス</a></li>
+				<li><a href="http://www.adprint.jp/dataintro/downloads.aspx" target="_blank">専用テンプレート</a></li>
+				<li><a href="http://www.adprint.jp/dataintro/AfterMakeGuide.aspx" target="_blank">後加工一覧</a></li>
+				<li><a href="http://www.adprint.jp/dataintro/paperInfo.aspx" target="_blank">取扱用紙一覧</a></li>
+				<li><a href="http://www.adprint.jp/customerService/reference.aspx" target="_blank">サンプル請求</a></li>
+			</ul>
+			<div style="padding-bottom:7px;"></div>
+			<!-- meishi_menu_bar -->
+			<nav class="meishi_submain_menubar">
+			<ul>
+				<li style="width: 90px">
+					<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PN">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_185659_633HB.png" style="margin-left: 5px;margin-top:20px;" alt="icon"></div>
+						<span style="font-size: 13px;">一般紙質<br>名刺</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/pnUi.aspx?chkTab=ui9155&amp;Code=UIPN">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_185731_JDXWV.png" style="margin-top:20px;margin-left: 7px;" alt="icon"></div>
+						<span style="font-size: 12px;">高級紙質<br>名刺</span>
+					</a>
+				</li>
+				<li style="width:90px"> 
+             <a href="http://www.adprint.jp/OrderMall/Order/FreeSizeOrder.aspx"> 
+              <div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170410_101641_N3F02.png" style="margin-left: 8px;margin-top:10px;" alt="icon"></div> 
+              <span style="font-size:12px">規格外サイズ</span> 
+             </a> 
+            </li>
+            <li style="width:90px"> 
+             <a href="http://www.adprint.jp/Product/Intro/WC"> 
+              <div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_185811_5TG4B.png" style="margin-left: 10px;margin-top:10px;" alt="icon"></div> 
+              <span style="font-size:12px">特色印刷<br>
+             	  商品</span> 
+             </a> 
+            </li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PNHIMI">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190040_IPK7N.png" alt="icon" style="margin-left: 13px;margin-top:14px;"></div>
+						<span style="font-size:12px">特殊加工<br>
+							商品</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/p2.aspx?Code=P2">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190059_WY2YJ.png" style="margin-left: 9px;margin-top:8px;" alt="icon"></div>
+						<span style="font-size: 12px;">型抜き<br>
+							名刺・カード</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/sa.aspx?Code=SA">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190120_HXDNA.png" style="margin-top:12px;margin-left: 6px;" alt="icon"></div>
+						<span style="font-size:12px">メール便<br>
+							名刺</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/ni.aspx?Code=NI">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190136_7ERW8.png" style="margin-top:15px;margin-left: 6px;" alt="icon"></div>
+						<span style="font-size:12px">まとめ割引<br>
+							名刺</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/hn.aspx?Code=HN">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190151_84H57.png" style="margin-left: 6px;margin-top:15px;" alt="icon"></div>
+						<span style="font-size:12px">二つ折り<br>
+							名刺</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/tp.aspx?Code=TP">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190205_JWT9F.png" style="margin-left: 10px;margin-top:5px;" alt="icon"></div>
+						<span style="font-size:12px">タグ</span>
+					</a>
+				</li>
+				<li style="width:90px">
+					<a href="http://www.adprint.jp/Product/Intro/ra.aspx?Code=RA">
+						<div style="width:82.2px"><img src="http://www.adprint.jp/UploadData/Files/20170407_190221_F48TF.png" style="margin-left: 5px;margin-top:15px;" alt="icon"></div>
+						<span style="font-size:12px">ケース</span>
+					</a>
+				</li>
+		        </ul>
+		</nav>
+		
+		<style>
+		html, body, div, span, dl, dt, dd, ol, ul, li,h1, h2, h3, h4, h5, h6, p, blockquote, pre,address,cite,
+		form,fieldset,input,textarea,select,table,th, td, article,aside,details,figcaption,figure,footer,header,hgroup,
+		nav,section,summary {margin: 0; padding: 0;}
+		
+		h1, h2, h3, h4, h5, h6{ font-size:100%; font-weight:normal;}
+		
+		fieldset, img, abbr, acronym{border:0 none;}
+		
+		ol, ul {list-style: none;}
+		
+		table {border:0 none;}
+		
+		caption, th, td{ text-align:left; font-weight:normal;}
+		
+		address, caption, strong, em, cite{ font-weight:normal; font-style:normal; }
+		.galleryWrap{
+			position: relative;
+			margin: 0 auto;
+			width: 740px;
+			height: auto;
+		}
+		/*이미지 뷰*/
+		.galleryWrap > .imgWrap{
+			position: relative;
+			overflow: hidden;
+			width: 736px;
+			height: 275px;
+			background: #e8e8e8;
+		}
+		
+		.imgWrap > .imgView{
+			position: relative;
+		}
+		.imgWrap > .imgView > li{
+			float: left;
+		}
+		
+		/* 페이지 */
+		
+		
+		/* 썸네일 */
+		.thumWrap {
+			position: relative;
+			overflow: hidden;
+			margin: 0 auto;
+			width: auto;   /* 추후에 자동으로 설정 */
+		}
+		.thumWrap > .thum{
+			position: relative;
+			display: inline-block;
+			width:747px!important;
+			height: 95px;
+		}
+		.thumWrap > .thum > .swiper-pagination-switch{
+			margin-top:4px;
+			float: left;
+			width: 247px;
+			height: 94px;
+			cursor: pointer;
+			margin-right:0px;
+		}
+		/*
+		.thumWrap > .thum > .swiper-active-switch {
+		  	width: 241px;
+			height: 94px;
+			margin-left:4px;
+		}
+		*/
+		
+		/*sns 부분*/
+		#sns_back {
+			background:url('img_pc/sns_img.png')no-repeat;
+		}
+	</style>
+		
+		
+		<!-- 메인배너 & 상품뉴스 부분 -->
+			<div style="width:100%; height:350px;　overflow: hidden; margin-top:51px;">
+				<div style="width:740px; height:375px; float:left;">
+				
+				<div class="galleryWrap">
+				 	<div class="imgWrap">
+				 		<ul class="imgView swiper-wrapper">
+							<li><img src="./img_pc/pc_main_banner.png"></li>
+							<li><img src="./img_pc/pc_main_banner2.png"></li>
+							<li><img src="./img_pc/pc_main_banner3.png"></li>
+						</ul>
+				 	</div>
+					
+					<div class="thumWrap">
+						<div class="thum">
+						</div>
+					</div>
+				</div>
+				
+				</div>
+				<!-- 우측 -->
+				<div style="width:257px; height:375px; float:right; text-align: center;">
+					<!-- 商品ニュース -->
+					<div style="width:256px; height:auto; background: #ececed; padding: 5px 10px 0px 10px; box-sizing:border-box; margin-top:1px;">
+						<div style="width:207px; border-bottom:1px solid #686868; margin:0 auto; text-align: left;">
+						<span style="font-size:18px; font-weight:bold; color:#666666; ">商品ニュース</span>
+						</div>
+						<img src="img_pc/news_img.png" alt="title_img" style="margin-top:8px;" >
+						<div style="position:relative; height:45px; margin-top:3px;">
+							<span style="position:absolute; width:25px; height:22px; background:#0085BD; color:#ffffff; left:14px;">01</span>
+							<p style="font-size:13px;display:inline-block;position:absolute; left: 47px;top: 0px;color: #666666;line-height: 24px;"><span style="font-weight:bold;">オススメアイテム【Admail】</span><br>
+								2017年も早くも半ばですね！
+							</p>
+						</div>
+						<img src="img_pc/news_line.png" alt="line" style="display:inline-block; margin:8px; padding:0px;">
+						<div style="position:relative; height:27px; margin-top:-6px;">
+							<span style="position:absolute; width:25px; height:22px; background:#0085BD; color:#ffffff; left:14px;">02</span>
+							<p style="font-size:13px;display:inline-block;position:absolute; left: 47px;top: 0px;color: #666666;line-height: 22px;">
+								せっかくオリジナルのもの…
+							</p>
+						</div>
+					</div>
+					<!-- ado_labo -->
+					<a href="http://meishi.adprint.jp/" alt="meishi_labo" target="_blank">
+					 <img src="img_pc/meishi_labo.png" alt="meishi_labo" style="width:255px;height: 75px;margin-top: 3px;margin-bottom: 2px;" />
+					</a>
+					<!-- sns領域-->
+					<div id="sns_back" style="border: 1px solid #3880a7; margin-left:1px; width:255px; height:49px; margin-top:-6px; position: relative; box-sizing:border-box;">
+						<span style="color:#3880a7;font-size: 25px;position:absolute;left: 40px;top: 1px;letter-spacing: 3px;font-weight:bold;">SNS</span>
+						<span style="position:absolute;font-size: 10px; font-weight:bold; color: #3880a7;top: 30px;left: 8px;">Social Network Service</span>
+						<a href="#">
+						<img src="img_pc/sns_icon.png" alt="sns_icon" style="width:32px;position:absolute;right: 83px;top: 8px;">
+						</a>
+						<a href="#">
+						<img src="img_pc/sns_icon2.png" alt="sns_icon" style="width:32px;position:absolute;right: 45px;top: 8px;">
+						<a href="#">
+						</a>
+						<a href="#">
+						<img src="img_pc/sns_icon3.png" alt="sns_icon" style="width:32px;position:absolute;right: 7px;top: 8px;">
+						</a>
+					</div>
+				</div>
+			</div>
+			
+			
+			<div style="padding-bottom:35px;"></div>
+			<!-- 商品一覧の部分 -->
+			<div id="product">
+				<h3 style="font-size:26px;">商品のご紹介</h3>
+				<p style="color:#717071; font-size:14px; margin-bottom: 7px;">※製作例の金額は、91×55mmの100枚で表記しております。</p>
+				
+				<div class="box01">
+					<div class="paper_name">一般紙質名刺</div>
+					<div class="picture">
+						<img src="img_pc/product_img01.jpg" alt="一般紙質"/>
+					</div>
+					<div class="text_box">一般的に使用される用紙です。ビジネスやプライベートのオリジナル名刺はもちろん、ショップカードやポイントカードなど幅広い用途に使用できます。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span>両面4色・2営業日</span>
+							<p style="display:inline-block;">460<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PN">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">高級紙質名刺</div>
+					<div class="picture">
+						<img src="img_pc/product_img02.jpg" alt="高級紙質"/>
+					</div>
+					<div class="text_box">人気のエンボス加工や、パール加工が施された高級感のある用紙です。高級用紙の多様な質感や色味はデザインの特徴をさらに引き出してくれます。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>スコットランド189kg</span>
+							<span>片面4色・3営業日</span>
+							<p style="display:inline-block;">1,250<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/pnUi.aspx?chkTab=ui9155&Code=UIPN&uicid=3861">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">特色印刷名刺（白印刷）</div>
+					<div class="picture">
+					<img src="img_pc/product_img03.jpg" alt="特色印刷"/>
+					</div>
+					<div class="text_box">CMYKでは表現できなかった「白色」を専用のホワイトトナーで1色刷りしたオンデマンド印刷商品です。用紙は3色からお選びいただけます。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>ブラック186kg</span>
+							<span>片面1色(白)・5営業日</span>
+							<p style="display:inline-block;">1,790<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/WC">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<!-- 一番目 -->
+				<div class="box01">
+					<div class="paper_name">特殊加工名刺</div>
+					<div class="picture">
+						<img src="img_pc/product_img04.jpg" alt="一般紙質"/>
+					</div>
+					<div class="text_box">ツルツルとザラザラ感を出せる「ハイブリッド」、立体感を与える「エポキシ･エンボス」、スピードくじ等でお馴染みの「スクラッチカード」など全４種。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>ハイブリッドミレニアム</span>
+							<span>片面4色・9営業日</span>
+							<p style="display:inline-block;">2,560<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PNHIMI">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">型抜き名刺・カード</div>
+					<div class="picture">
+						<img src="img_pc/product_img05.jpg" alt="型抜きカード"/>
+					</div>
+					<div class="text_box" style="letter-spacing: -0.4px;">自由な形に名刺・カードが作れる型抜きカードです。打ち抜き・切り込み・ミシン・折り込み線加工を加えることで、さらに個性あふれるアイテムが製作できます。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span>両面4色・5営業日</span>
+							<p style="display:inline-block;">5,160<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/p2.aspx?Code=P2">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">メール便名刺</div>
+					<div class="picture">
+					<img src="img_pc/product_img06.jpg" alt="メール便名刺"/>
+					</div>
+					<div class="text_box">とにかく安い！全国一律送料無料のメール便名刺です。一般紙質、高級紙質の中から８種類選べます。納期を急いでいない方にはメール便名刺がお得です。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span>両面4色・7営業日</span>
+							<p style="display:inline-block;">2,460<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/sa.aspx?Code=SA">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<!-- 2番目 -->
+				<div class="box01">
+					<div class="paper_name">まとめ割引名刺</div>
+					<div class="picture">
+						<img src="img_pc/product_img07.jpg" alt="一般紙質"/>
+					</div>
+					<div class="text_box">20件以上の大量注文で最大50%割引になるまとめ割引名刺です。企業/社員の名刺製作や店舗ごとのクーポン券、日付別割引券などに最適です。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span>両面4色・5営業日</span>
+							<p style="display:inline-block;">9,200<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/ni.aspx?Code=NI">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">トレーディングカード</div>
+					<div class="picture">
+						<img src="img_pc/product_img08.png" alt="高級紙質"/>
+					</div>
+					<div class="text_box">一般的なトレカサイズから変形サイズ、スリムサイズまで5つのサイズから選べます。最小ロット20セット(種類)50枚ずつから注文可能です。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span style="font-size:12px;">20デザイン50枚ずつ</span>
+							<p style="display:inline-block;">10,440<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="#">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">トレーディングカードケース</div>
+					<div class="picture">
+					<img src="img_pc/product_img09.jpg" alt="特色印刷"/>
+					</div>
+					<div class="text_box">トレーディングカード専用のカードケースです。形はAタイプ/Bタイプの２種類、全５つのサイズから選べます。最小ロット10個から注文可能です。</div>
+					<div class="sample">
+							<span>例</span>
+							<span style="font-size:12px;">コート258kg(片面PPツヤ)</span>
+							<span>50枚用ケース×10個</span>
+							<p style="display:inline-block;">17,600<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/p1.aspx?Code=P1">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<!-- 3番目 -->
+				<div class="box01">
+					<div class="paper_name">二つ折り名刺・カード</div>
+					<div class="picture">
+						<img src="img_pc/product_img10.jpg" alt="二つ折り名刺"/>
+					</div>
+					<div class="text_box" style="letter-spacing:-0.4px;">名刺2枚分の大きさに「折り込み線加工」を施し、二つ折りにできるようにした名刺です。縦型/横型から選べ、ショップカードやスタンプカード等の製作に最適です。 </div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span>片面4色・5営業日</span>
+							<p style="display:inline-block;">2,760<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/P5?Code=P5&uicid=7000">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">商品タグ </div>
+					<div class="picture">
+						<img src="img_pc/product_img11.jpg" alt="高級紙質"/>
+					</div>
+					<div class="text_box"　 style="letter-spacing: -0.4px;">価格・仕様の表示からイラスト、ロゴ印刷まで商品を素敵に彩るオリジナルタグが製作可能です。無料PP紐またはナイロン紐付き。基本型/二つ折り型から選べます。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>マットコート220kg</span>
+							<span>両面4色・5営業日</span>
+							<p style="display:inline-block;">1,480<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/hn.aspx?Code=HN">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+				
+				<div class="box01">
+					<div class="paper_name">名刺ケース</div>
+					<div class="picture">
+					<img src="img_pc/product_img12.jpg" alt="特色印刷"/>
+					</div>
+					<div class="text_box">名刺の商品変質を最小限に抑えてくれる名刺にはかかせないアイテム！プラスチックケース100枚/200枚用、紙ケース200枚/250枚用から選べます。</div>
+					<div class="sample">
+							<span>例</span>
+							<span>プラスチックケース</span>
+							<span>100枚用ケース×100個</span>
+							<p style="display:inline-block;">1,850<span style="font-size: 17px;">円</span></p>
+						</div>					
+					
+					<div class="button">
+						<a href="http://www.adprint.jp/Product/Intro/tp.aspx?Code=TP&uicid=3996">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+			</div>
+			
+			<!-- 리뷰부분 시작 -->
+			<!-- 리뷰의 스타일 -->
+			<style>
+				.review_header{
+				    height: 27px;
+				    line-height: 27px;
+				    border-bottom: 1px solid #ddd;
+				    font-size: 20px;
+				    color: #666;
+				    margin: 10px 0;
+				    font-weight: bold;
+				    padding: 0 7px;
+				}
+				.review_header_text{float:right; font-size:13px;}
+				.review_header_link{color:#666;}
+				.new_review{margin-top:15px;}
+				.new_review > ul{
+					display: table;
+				    margin: 0;
+				    padding: 0;
+				    table-layout: fixed;
+				    width: 100%;
+				    text-align: center;
+				   
+				}
+				
+				.new_review > ul > li {
+				    height: 188px;
+				    border-left: 1px solid #ccc;
+				    border-top: 1px solid #ccc;
+				    border-bottom: 1px solid #ccc;
+				    margin-bottom: 10px;
+				    display: table-cell;
+				    list-style: none;
+				    padding: 7px;
+				    background:#fff;
+				}
+				.new_review > ul > li:nth-child(5) {
+				    border-right: 1px solid #ccc;
+				    display: table-cell;
+				    list-style: none;
+				}
+				.customer_id{text-align:left; margin-top:3px; }
+				.review_title {text-align:left; height:28px;}
+				.review_title > a{color:#0085BD;font-size:15px; font-weight:bold;}
+				.review_text {
+				    text-overflow: ellipsis;
+				    width: 190px;
+				    overflow:hidden;
+				    display: -webkit-box;
+				    -webkit-box-orient: vertical;
+				    line-height: 17px;
+				    text-align: left!important;
+				    font-size: 12px;
+				    height:72px;
+				}
+				.review_text > a{
+				color:#666;
+				}
+				.more_preview{float:right; padding: 15px 0px 0px 0;}
+				.more_preview > a {font-size:13px; color:#059;}
+				
+			</style>
+			<div class="review_header">レビュー
+				 <span class="review_header_text"><a class="review_header_link" href="###" alt="一覧はこちら"style="padding-top: 5px; display: inline-block; font-size:13px;">▶ 一覧はこちら </a></span>
+			</div>
+			<div class="new_review">
+				<ul>
+					<li>
+						<a href="#"><img src="img_pc/review_sample01.png" alt="review_sample01" style="border: 1px solid #dddddd; box-sizing: border-box;"> 
+						</a>
+						<p class="customer_id">cro**様</p>
+						<p class="review_title"> <a href="###">ドレスショップ名刺 </a>
+						</p>
+						<p class="review_text">
+							<a href="###">ショップカードとして、名刺として、両用したいお客様も増えてきています。そんな時は迷わずアドプリさんにお願いします！...</a>
+						</p>
+						<p class="more_preview">
+							<a href="###">詳しくはこちら▶</a>
+						</p>
+					</li>
+					<!-- 1番終わり  -->
+					<li>
+						<a href="#"> <img src="img_pc/review_sample02.png" alt="review_sample02" style="border: 1px solid #dddddd; box-sizing: border-box;"> 
+						</a>
+						<p class="customer_id">cro**様</p>
+						<p class="review_title"> <a href="###">地図入りの名刺に！</a>
+						</p>
+						<p class="review_text">
+							<a href="###">ショップカードとして、名刺として、両用したいお客様も増えてきています。そんな時は迷わずアドプリさんにお願いします！...</a>
+						</p>
+						<p class="more_preview">
+							<a href="###">詳しくはこちら▶</a>
+						</p>
+					</li>
+					<!-- 2番終わり -->
+					<li>
+						<a href="#"> <img src="img_pc/review_sample03.png" alt="review_sample03" style="border: 1px solid #dddddd; box-sizing: border-box;"> 
+						</a>
+						<p class="customer_id">cro**様</p>
+						<p class="review_title"> <a href="###">コーヒーチケットに！</a>
+						</p>
+						<p class="review_text">
+							<a href="###">ショップカードとして、名刺として、両用したいお客様も増えてきています。そんな時は迷わずアドプリさんにお願いします！...</a>
+						</p>
+						<p class="more_preview">
+							<a href="###">詳しくはこちら▶</a>
+						</p>
+					</li>
+					<!-- 3番終わり -->
+					<li>
+						<a href="#"> <img src="img_pc/review_sample04.png" alt="review_sample04" style="border: 1px solid #dddddd; box-sizing: border-box;"> 
+						</a>
+						<p class="customer_id">cro**様</p>
+						<p class="review_title"> <a href="###">コーヒーの割引チケット！</a>
+						</p>
+						<p class="review_text">
+							<a href="###">ショップカードとして、名刺として、両用したいお客様も増えてきています。そんな時は迷わずアドプリさんにお願いします！...</a>
+						</p>
+						<p class="more_preview">
+							<a href="###">詳しくはこちら▶</a>
+						</p>
+					</li>
+					<!-- 4番終わり -->				
+					<li>
+						<a href="#"> <img src="img_pc/review_sample05.png" alt="review_sample05" style="border: 1px solid #dddddd; box-sizing: border-box;"> 
+						</a>
+						<p class="customer_id">cro**様</p>
+						<p class="review_title"> <a href="###">結婚相談所のショップ名刺</a>
+						</p>
+						<p class="review_text">
+							<a href="###">ショップカードとして、名刺として、両用したいお客様も増えてきています。そんな時は迷わずアドプリさんにお願いします！...</a>
+						</p>
+						<p class="more_preview">
+							<a href="###">詳しくはこちら▶</a>
+						</p>
+					</li>
+					<!-- 5番終わり -->
+				</ul>
+			</div>
+			
+			
+			<!-- 리뷰부분 끝 -->
+			<div style="padding-top:20px;"></div>
+			<!-- 관련상품 -->
+			<div id="related_product">
+				<p style="color:#55b55e; font-size:20px; font-weight:bold; border-bottom: 1px solid #cecece;">関連商品</p>
+				<span style="color:#888888;font-size:13px;display: inline-block;margin-top: 8px;">※名刺以外にも多種類の印刷物を安く提供してますのでぜひごりようください。</span><br>
+				<div class="re_product" style="border-bottom: 2px solid #DDDDDD;">
+					<img src="img_pc/test3.png" alt="postcard" style="width:195px;    border-bottom: 1px solid #c5c5c5;">
+					<strong>はがき</strong>
+					<p>一般的な規格サイズ</p>
+					<span>100×148mm</span>
+					<span>100枚</span>
+					<span>1,530<span style="font-size:15px;font-weight:bold;">円</span></span>
+				</div>
+				<!--1-->
+				<div class="re_product" style="border-bottom: 2px solid #DDDDDD;">
+					<img src="img_pc/test1.png" alt="flier" style="width:195px;    border-bottom: 1px solid #c5c5c5;">
+					<strong>厚紙フライヤー</strong>
+					<p>高級感のある厚紙フライヤー</p>
+					<span>A5サイズ </span>
+					<span>100枚</span>
+					<span>3,220<span style="font-size:15px;font-weight:bold;">円</span></span>
+				</div>
+				<!--2-->
+				<div class="re_product" style="border-bottom: 2px solid #DDDDDD;">
+					<img src="img_pc/test5.png" alt="menu" style="width:195px;    border-bottom: 1px solid #c5c5c5;">
+					<strong>メニュ印刷</strong>
+					<p>両面4色 / 3営業日</p>
+					<span>A3サイズ</span>
+					<span>5部</span>
+					<span>5,680<span style="font-size:15px;font-weight:bold;">円</span></span>
+				</div>
+				<!--3-->
+				<div class="re_product" style="border-bottom: 2px solid #DDDDDD;">
+					<img src="img_pc/text_ev1.png" alt="envelop" style="width:195px;    border-bottom: 1px solid #c5c5c5;">
+					<strong>封筒</strong>
+					<p>全面オリジナル封筒</p>
+					<span>角2‐A サイズ</span>
+					<span>100枚</span>
+					<span>2,360<span style="font-size:15px;font-weight:bold;">円</span></span>
+				</div>
+				<!--4-->
+				<div class="re_product" style="border-bottom: 2px solid #DDDDDD;">
+					<img src="img_pc/test_pop.png" alt="takupop" style="width:195px;    border-bottom: 1px solid #c5c5c5;">
+					<strong>卓上POP</strong>
+					<p>片面4色／PPツヤ有</p>
+					<span>中サイズ</span>
+					<span>5枚</span>
+					<span>1,560<span style="font-size:15px;font-weight:bold;">円</span></span>
+				</div>
+			</div>
+			<!--related_productのdiv-->
+				<!--5-->
+				<!--コラム-->
+				<div class="vspace_10"></div>
+				<div id="column">
+					<p style="font-size:20px;font-weight:bold;margin-bottom:10px;color:#666666;border-bottom: 1px solid #cecece;">コラム</p>
+					<ul>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_01.png" alt="column_img01" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・こだわりの名刺デザインで差をつけよう</span><br>
+						　-名刺印刷通販サイトの進化で、最近ではかなり凝ったデザインの名刺も安価で…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_02.png" alt="column_img02" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺は素材が重要</span><br>
+						　-自分をうまく表現できない、それなら「名刺」を制作して自分をアピールしてみて…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_03.png" alt="column_img03" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・初対面で好印象を残すためには</span><br>
+						　-名刺は社会人の必須アイテムです。取引先の方や、対面したお客様、渡す相手や…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_04.png" alt="column_img04" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・自分でオリジナル名刺を作成しましょう</span><br>
+						　-今や名刺は自分で好きなようにレイアウトなどを考えながらインターネットで…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_05.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺作成に無駄なコストを削りたいなら！</span><br>
+						　-社会人のみなさんは、いま使っている名刺を一枚印刷するのに、いったいいくらかけて…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<!--1~5-->
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_06.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・ 相手が受け取りたくなる名刺の作成ポイント</span><br>
+						　-自分の名前を憶えて欲しい時や、自分を売り込む時の必須アイテムといえば…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_07.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・相手に好印象を与える名刺作成とは</span><br>
+						　-名刺を作成する際にどのようなデザインで、何を表すかは…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_08.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺で最も大切なこととは</span><br>
+						　-名刺とはビジネスマンにとって最もといっても過言ではないほど大切なものになって…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_09.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・暑中見舞いの豆知識</span><br>
+						　-「暑中見舞い」とは、一年の中で最も暑い時期に知人や親戚、普段お世話になった方…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_10.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺作成時の注意点！(仕上がりの色具合)</span><br>
+						　-名刺注文をするときの“気になることTOP５”に入ってくる名刺の…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<!--6~10-->	
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_11.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・ うまく利用すればコストはDOWN！効率はUP！</span><br>
+						　-かつては名刺を作る際に、名刺製作にかかる費用を比較できる情報が少なく…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_12.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・商品タグ【ブランドイメージを向上させる名脇役！】</span><br>
+						　-人気のブランドはどれも、明確なブランドイメージを打ち出しています…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_13.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・トレカ【多くの人に親しまれるトレカの作り方は？】</span><br>
+						　-自分で生み出したコンテンツのトレーディングカードを作りたいと考えて…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_14.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・ 封筒【デザインデータが無くても封筒注文が簡単にできると？】</span><br>
+						　-アドプリントは、低コストかつ豊富なテンプレートが選べる「封筒データ作成…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_15.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・お客様の注目を浴びる卓上POPとは？</span><br>
+						　-卓上POPは主に飲食店などで売上増加に貢献する販促手段として用いられて…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<!-- 11~15 -->
+						<li>
+							<a href="#">
+							<img src="img_pc/thumbnail_16.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・ 名刺のデザイン【少しの工夫で初対面の印象をアップ！】</span><br>
+						　-デザイン関系の業種の方やフリーランスの方に人気の「小口染め」加工…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_17.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・高級用紙で差を付ける！ワンランク上の名刺製作が紙質がポイント</span><br>
+						　-個人としての印象や、企業のアピールに大きく関わる名刺。ワンランク上…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_18.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺の英語表記について（名前・会社名・部署名・役職名・電話番号・住所）</span><br>
+						　-姓が先（Ado Taro）か、名が先か（Taro Ado）をはじめ、姓と名の間に…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_19.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺の豆知識【 国ごとの名刺文化の違い】</span><br>
+						　-日本は名刺の使用率が世界でも最も高い国だと言われています。初対面で…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+						<li>
+							<a href="#" target="_blank">
+							<img src="img_pc/thumbnail_20.png" alt="column_img05" style="width:130px; float:left; margin-right:10px;"/>
+							</a>
+							<span style="font-size:17px; font-weight:bold;">・名刺の豆知識【名刺の始まりはどこから？】</span><br>
+						　-日本は世界でも最も頻繁に名刺を用いる国だといわれています。今やビジネス場で…
+						<a href="#" target="_blank" class="direct_link">▶詳しくはこちら</a>
+						</li>
+					</ul>
+				</div>
+				<img src="img_pc/footer_img00.png" style="width:1000px; margin-top:20px;" />
+			<br><br><br><br><br><br><br><br>
+		</div>
+		
+		<div id="m_wraper">
+			<img src="img_mobile/header_img.png" style="width:100%;"/>
+			
+			<!-- Swiper -->
+		    <div class="swiper-container">
+		        <div class="swiper-wrapper">
+		            <div class="swiper-slide"><img src="img_mobile/mobile_banner01.png" alt="名刺"/></div>
+		            <div class="swiper-slide"><a href="http://www.adprint.jp/Product/Intro/pnUi.aspx?chkTab=ui9155&Code=UIPN&uicid=3861"><img src="img_mobile/mobile_banner00.png" alt="名刺"/></a></div>
+		            <div class="swiper-slide"><img src="img_mobile/mobile_banner01.png" alt="名刺"/></div>
+		        </div>
+		        <!-- Add Pagination -->
+		        <div class="swiper-pagination"></div>
+		        <!-- Add Arrows -->
+		        <div class="swiper-button-next"></div>
+		        <div class="swiper-button-prev"></div>
+		    </div>
+		    <!-- Swiper JS -->
+		    
+		    <script src="js_mobile/swiper.min.js"></script>
+		
+		    <!-- Initialize Swiper -->
+		    <script>
+		    var swiper = new Swiper('.swiper-container', {
+		        pagination: '.swiper-pagination',
+		        nextButton: '.swiper-button-next',
+		        prevButton: '.swiper-button-prev',
+		        paginationClickable: true,
+		        spaceBetween: 30,
+		        centeredSlides: true,
+		        autoplay: 3000,
+		        autoplayDisableOnInteraction: false
+		    });
+		    </script>
+			<!--사이즈 테스트 부분시작-->
+			<!-- style -->
+			<style>
+				
+				
+				button.accordion {
+					width:100%;
+				    background-color: #f6f6f6;
+			        color: #000000;
+    				height: 40px;
+				    margin-left: 0px;
+				    margin-bottom: 0px;
+				    line-height: 42px;
+				    padding-left: 9px;
+				    padding-right:10px;
+				    border: none;
+				    text-align: left;
+				    font-size: 16px;
+				    transition: 0.4s;
+				}
+				button.accordion:after {
+				    content: '\002B';
+				    color: #777;
+				    font-weight: bold;
+				    float: right;
+				    margin-left: 5px;
+				    border-width: 0 6px 6px 6px;
+				}
+				
+				button.accordion.active:after {
+				    content: "\2212";
+				}
+				
+				div.panel {
+					width:100%;
+				    background-color: white;
+				    max-height: 0;
+				    overflow: hidden;
+				    transition: max-height 0.3s ease-out;
+				}
+				.panel > ul{
+					border: 1px solid #EEEEEE;
+				    box-sizing: border-box;
+				    padding: 8px 10px 10px 15px;
+				    line-height: 26px;
+				}
+				#text_test{
+					height:auto; 
+					background:gray;
+				}
+			
+				#text_test > a{
+					width:50%; 
+					height:55px; 
+					line-height:55px;
+					background:#FFFFFF; 
+					float:left; 
+					text-align: center; 
+					font-size:1.000em;
+					border: 1px solid #EEEEEE;
+					box-sizing:border-box;
+				}
+				</style>
+			<!-- 상품일람 부분 끝 -->
+			<button class="accordion" >名刺・カード印刷商品一覧</button>
+					<div id="text_test" class="panel"style="display:block;">
+						<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PN">一般紙質名刺</a>
+						<a href="http://www.adprint.jp/Product/Intro/pnUi.aspx?chkTab=ui9155&Code=UIPN&uicid=3861">高級紙質名刺</a>
+						<a href="http://www.adprint.jp/OrderMall/Order/FreeSizeOrder.aspx">規格外サイズ</a>
+						<a href="http://www.adprint.jp/Product/Intro/WC">特色印刷商品</a>
+						<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PNHIMI">特殊加工商品</a>
+						<a href="http://www.adprint.jp/Product/Intro/p2.aspx?Code=P2">型抜き名刺・カード</a>
+						<a href="http://www.adprint.jp/Product/Intro/sa.aspx?Code=SA">メール便名刺</a>
+						<a href="http://www.adprint.jp/Product/Intro/ni.aspx?Code=NI&uicid=3871">まとめ割引名刺</a>
+						<a href="http://www.adprint.jp/Product/Intro/hn.aspx?Code=HN">二つ折り名刺</a>
+						<a href="http://www.adprint.jp/Product/Intro/tp.aspx?Code=TP&uicid=3996">商品タグ</a>
+						<a href="http://www.adprint.jp/Product/Intro/ra.aspx?Code=RA&uicid=3864">名刺ケース</a>	
+						<a href="#">　</a>					
+					</div>
+				<div style="padding-bottom:5px;"></div>
+				<button class="accordion">サービス案内</button>
+				<div class="panel">
+					<ul>
+					  <li style="font-size:1.125em;margin-top:12px;">商品・データ作成関連</li>
+						<a href="http://www.adprint.jp/dataintro/downloads.aspx" style="display:inline-block; margin-top:5px;">・テンプレートについて</a><br>
+						<a href="http://www.adprint.jp/dataIntro/datamaking.aspx">・データ作成方法について</a><br>
+						<a href="http://www.adprint.jp/dataintro/paperInfo.aspx">・取扱用紙一覧について</a><br>
+						<a href="http://www.adprint.jp/dataintro/AfterMakeGuide.aspx" style="display: inline-block; margin-bottom: 10px;">・後加工一覧について</a><br>
+						<li style="font-size:1.125em; border-top: 0.5px solid #eeeeee;padding-top: 10px;">データ関連サービス</li>
+						<a href="http://www.adprint.jp/dataintro/detaAgency.aspx" style="display: inline-block;margin-bottom: 10px;margin-top: 5px;">・データ作成サービスについて</a><br>
+						<li style="font-size:1.125em; border-top: 0.5px solid #eeeeee;padding-top: 10px;">商品関連サービス</li>
+						<a href="http://www.adprint.jp/customerService/reference.aspx" style="display: inline-block; margin-top:5px;">・サンプル請求について</span></a>
+					</ul>
+				</div>
+					
+					<script>
+					var acc = document.getElementsByClassName("accordion");
+					var i;
+					var openPan = document.getElementsByClassName('panel')[0]
+					acc[0].classList.add('active');
+					openPan.style.maxHeight = openPan.scrollHeight + 'px';
+
+					for (i = 0; i < acc.length; i++) {
+					  acc[i].onclick = function() {
+					    this.classList.toggle("active");
+					    var panel = this.nextElementSibling;
+					    if (panel.style.maxHeight){
+					      panel.style.maxHeight = null;
+					    } else {
+					      panel.style.maxHeight = panel.scrollHeight + "px";
+					    } 
+					  }
+					}
+					</script>
+			<!--사이즈 테스트 부분끝-->
+			<div style="margin-top:3%;"></div>
+			<div id="m_product">
+				<p id="introduce">商品のご紹介</p>
+				<div class="m_box01">
+					<span>一般紙質名刺</span>
+					<img src="img_mobile/m_product_img01.jpg" alt="一般紙質"/>
+					<p>一般的に使用される用紙です。ビジネスやプライベートのオリジナル名刺はもちろん、ショップカードやポイントカードなど幅広い用途に使用できます。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>両面4色・2営業日</span>
+						<p style="display:inline-block;">460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PN">詳しく見る</a>
+						<a href="http://www.adprint.jp/Product/PriceTable.aspx?Code=PNPBPB">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>高級紙質名刺</span>
+					<img src="img_mobile/m_product_img02.jpg" alt="高級紙質"/>
+					<p>人気のエンボス加工や、パール加工が施された高級感のある用紙です。高級用紙の多様な質感や色味はデザインの特徴をさらに引き出してくれます。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>スコットランド189kg</span>
+						<span>片面4色・3営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/pnUi.aspx?chkTab=ui9155&Code=UIPN&uicid=3861">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>特色印刷名刺 (白印刷)</span>
+					<img src="img_mobile/m_product_img03.jpg" alt="白色印刷"/>
+					<p>CMYKでは表現できなかった「白色」を専用のホワイトトナーで1色刷りしたオンデマンド印刷商品です。用紙は3色からお選びいただけます。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>ブラック186kg</span>
+						<span>片面1色(白)・5営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/WC">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<!--３目-->
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>特殊加工名刺</span>
+					<img src="img_mobile/m_product_img04.jpg" alt="特集加工"/>
+					<p>ツルツルとザラザラ感を出せる「ハイブリッド」、立体感を与える「エポキシ･エンボス」、スピードくじ等でお馴染みの「スクラッチカード」など全４種。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>ハイブリッドミレニアム</span>
+						<span>片面4色・9営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/pn.aspx?Code=PNHIMI">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>型抜き名刺・カード</span>
+					<img src="img_mobile/m_product_img05.jpg" alt="型抜きカード"/>
+					<p>自由な形に名刺・カードが作れる型抜きカードです。打ち抜き・切り込み・ミシン・折り込み線加工を加えることで、さらに個性あふれるアイテムが製作できます。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>両面4色・5営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/p2.aspx?Code=P2">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>メール便名刺</span>
+					<img src="img_mobile/m_product_img06.jpg" alt="メール便名刺"/>
+					<p>とにかく安い！全国一律送料無料のメール便名刺です。一般紙質、高級紙質の中から８種類選べます。納期を急いでいない方にはメール便名刺がお得です。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>両面4色・7営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/sa.aspx?Code=SA">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<!--6目-->
+				<div class="m_box01">
+					<span>まとめ割引名刺</span>
+					<img src="img_mobile/m_product_img07.jpg" alt="まとめ割引名刺"/>
+					<p>20件以上の大量注文で最大50%割引になるまとめ割引名刺です。企業/社員の名刺製作や店舗ごとのクーポン券、日付別割引券などに最適です。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>両面4色・5営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/ni.aspx?Code=NI&uicid=3871">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>トレーディングカード</span>
+					<img src="img_mobile/m_product_img08.jpg" alt="一般紙質"/>
+					<p>一般的なトレカサイズから変形サイズ、スリムサイズまで5つのサイズから選べます。最小ロット20セット(種類)50枚ずつから注文可能です。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>20デザイン50枚ずつ</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/p1.aspx?Code=P1">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>トレーディングカードケース</span>
+					<img src="img_mobile/m_product_img09.jpg" alt="一般紙質"/>
+					<p>トレーディングカード専用のカードケースです。形はAタイプ/Bタイプの２種類、全５つのサイズから選べます。最小ロット10個から注文可能です。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>コート258kg(片面PPツヤ)</span>
+						<span>50枚用ケース×10個</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/P5?Code=P5&uicid=6865&uicid=7000">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<!--9目-->
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>二つ折り名刺</span>
+					<img src="img_mobile/m_product_img10.jpg" alt="一般紙質"/>
+					<p>名刺2枚分の紙に「スジ入れ加工」を施し、二つ折りにした名刺です。縦型/横型から選べます。ショップカードやスタンプカード等の製作に最適です。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>片面4色・5営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/hn.aspx?Code=HN">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>商品タグ</span>
+					<img src="img_mobile/m_product_img11.jpg" alt="商品タグ"/>
+					<p>価格・仕様の表示からイラスト、ロゴ印刷まで商品を素敵に彩るオリジナル商品タグが製作可能です。無料PP紐またはナイロン紐付き。基本型/二つ折り型から選べます。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>マットコート220kg</span>
+						<span>両面4色・5営業日</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/tp.aspx?Code=TP&uicid=3996">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				<div class="vspace_10"></div>
+				<div class="m_box01">
+					<span>名刺ケース</span>
+					<img src="img_mobile/m_product_img12.jpg" alt="一般紙質"/>
+					<p>名刺の商品変質を最小限に抑えてくれる名刺にはかかせないアイテム！プラスチックケース100枚/200枚用、紙ケース200枚/250枚用から選べます。</p>
+					<div class="m_sample">
+						<span>制作例</span>
+						<span>プラスチックケース</span>
+						<span>100枚用ケース×100個</span>
+						<p style="display:inline-block;">2,460<span style="font-size: 21px;">円</span></p>
+					</div>
+					<div class="m_button">
+						<a href="http://www.adprint.jp/Product/Intro/ra.aspx?Code=RA&uicid=3864">詳しく見る</a>
+						<a href="#">注文はこちら</a>
+					</div>
+				</div>
+				
+			</div>
+			
+			<div style="margin-top: 4%;height: 5px;">&nbsp;</div>
+			<style>
+				#m_related_product {background:#ffffff;}
+			</style>
+			<div id="m_related_product">
+				<p  style="color: #ffffff;background: #55b55e;text-align: center;font-size: 1.125em;line-height: 33px; margin-bottom:5px;">商品のご紹介</p>
+				<p style="color:#888888; font-size:0.750em;">※名刺以外にも多種類の印刷物を安く提供してますのでぜひごりようください。</p>
+					<a href="http://www.adprint.jp/Product/Intro/pt.aspx?Code=PT">
+					<div class="m_re_product" >
+						<img src="img_mobile/m_kanren_01.png" alt="ex_img01"/>
+						<strong>はがき</strong>
+						<p>2,460円</p>
+						<span>カメレオン 215kg / 両面4色 <br> 5営業日 / 100枚</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Product/Intro/lf.aspx?Code=LF&uic=2">
+					<div class="m_re_product" >
+						<img src="img_mobile/m_kanren_02.png" alt="ex_img02"/>
+						<strong>厚紙フライヤー</strong>
+						<p>2,460円</p>
+						<span>カメレオン 215kg / 両面4色 <br> 5営業日 / 100枚</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Product/Intro/x1">
+					<div class="m_re_product" >
+						<img src="img_mobile/m_kanren_03.png" alt="ex_img03"/>
+						<strong>メニュ印刷</strong>
+						<p>2,460円</p>
+						<span>カメレオン 215kg / 両面4色 <br> 5営業日 / 100枚</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Product/Intro/ev.aspx?Code=EV">
+					<div class="m_re_product" >
+						<img src="img_mobile/m_kanren_04.png" alt="ex_img04"/>
+						<strong>封筒</strong>
+						<p>2,460円</p>
+						<span>カメレオン 215kg / 両面4色 <br> 5営業日 / 100枚</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Product/Intro/C1?Code=C1">
+					<div class="m_re_product" >
+						<img src="img_mobile/m_kanren_05.png" alt="ex_img05"/>
+						<strong>卓上POP</strong>
+						<p>2,460円</p>
+						<span>カメレオン 215kg / 両面4色 <br> 5営業日 / 100枚</span>
+					</div>
+					</a>
+			</div>
+			<!--関連商品の終わり-->
+			<div style="padding-bottom:6%;"></div>
+			<div style="text-align: left;">
+				
+			<div id="m_review_product">
+				<p  style="color: #ffffff;background: #00c4b0;text-align: center;font-size: 1.125em;line-height: 33px; margin-bottom:5px;">レビュー</p>
+					<a href="http://www.adprint.jp/Review/CustomerReviewView.aspx?reviewid=2441&UiMapper=UI_LEFTMENU_CARD">
+					<div class="m_re_review">
+						<img src="img_mobile/m_new_review_01.png" alt="ex_sample01"/>
+						<strong>cro**様</strong>
+						<p>ショップカードとして最適</p>
+						<span>とてもきれいに出来上がってお客様に大好評です…</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Review/CustomerReviewView.aspx?reviewid=2433&UiMapper=UI_LEFTMENU_CARD">
+					<div class="m_re_review">
+						<img src="img_mobile/m_new_review_02.png" alt="ex_img02"/>
+						<strong>hin**様</strong>
+						<p>ドレスショップ名刺</p>
+						<span>ショップカードとして、名刺として、両用したいお客様も増えてきています。そんな時は迷わずアドプリさんに…</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Review/CustomerReviewView.aspx?reviewid=2432&UiMapper=UI_LEFTMENU_CARD">
+					<div class="m_re_review">
+						<img src="img_mobile/m_new_review_03.png" alt="ex_img03"/>
+						<strong>hin**様</strong>
+						<p>コーヒーチケットに！</p>
+						<span>割引キャンペーンを利用させていただきました。コーヒーチケットを上質紙で作ってみたらと思い…</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Review/CustomerReviewView.aspx?reviewid=2431&UiMapper=UI_LEFTMENU_CARD">
+					<div class="m_re_review">
+						<img src="img_mobile/m_new_review_04.png" alt="ex_img04"/>
+						<strong>hin**様</strong>
+						<p>地図入りの名刺に！</p>
+						<span>割引キャンペーンを利用させていただきました。気になっていた地図の部分も大変見やすく、こんだけ複雑な…</span>
+					</div>
+					</a>
+					<a href="http://www.adprint.jp/Review/CustomerReviewView.aspx?reviewid=2430&UiMapper=UI_LEFTMENU_CARD">
+					<div class="m_re_review">
+						<img src="img_mobile/m_new_review_05.png" alt="ex_img05"/>
+						<strong>hin**様</strong>
+						<p>コーヒーの割引チケット！</p>
+						<span>	割引キャンペーンを利用させていただきました。上質紙は本当にしっくりしっとり仕上がっててクライアント様にも…</span>
+					</div>
+					</a>
+			</div>
+				
+				
+				
+			</div>
+			<!--関連商品の終わり-->
+			<div style="padding-bottom:6%;"></div>
+			<div id="m_column">
+				<div style="background: #cccccc;width:100%;color: #222222;border-top: 2px solid #222222;">
+					<p style="display: inline-block;font-size:1.125em;padding-left: 5px;line-height: 30px;">コラム</p>
+					<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN&joinerId=245" style="float:right;font-size:0.813em;margin: 7px 5px 0px 0px;">詳しくはこちら▶</a>
+				</div>
+				<ul id="column_list">
+					<li>◆ こだわりの名刺デザインで差をつけよう<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN&amp&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom:12px;">-名刺印刷通販サイトの進化で、最近ではかなり凝ったデザインの名刺も安価で…</span></a>
+					</li>
+					<li>◆ 名刺は素材が重要<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_02&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom:12px;">-自分をうまく表現できない、それなら「名刺」を制作して自分をアピールしてみて…</span></a>
+					</li>
+					<li>◆ 初対面で好印象を残すためには<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_03&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom:12px;">-名刺は社会人の必須アイテムです。取引先の方や、対面したお客様、渡す相手や…</span></a>
+					</li>
+					<li>◆ 自分でオリジナル名刺を作成しましょう<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_04&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-今や名刺は自分で好きなようにレイアウトなどを考えながらインターネットで…</span></a>
+					</li>
+					<li>◆ 名刺作成に無駄なコストを削りたいなら！<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_05&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-社会人のみなさんは、いま使っている名刺を一枚印刷するのに、いったいいくらかけて…</span></a>
+					</li>
+					<!-- 1~5 -->
+					<li>◆ 相手が受け取りたくなる名刺の作成ポイント<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_06&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-自分の名前を憶えて欲しい時や、自分を売り込む時の必須アイテムといえば…</span></a>
+					</li>
+					<li>◆ 相手に好印象を与える名刺作成とは<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_07&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-名刺を作成する際にどのようなデザインで、何を表すかは…</span></a>
+					</li>
+					<li>◆ 名刺で最も大切なこととは<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_08&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-名刺とはビジネスマンにとって最もといっても過言ではないほど大切なものになって…</span></a>
+					</li>
+					<li>◆ 暑中見舞いの豆知識<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_09&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-「暑中見舞い」とは、一年の中で最も暑い時期に知人や親戚、普段お世話になった方…</span></a>
+					</li>
+					<li>◆ 名刺作成時の注意点！(仕上がりの色具合)<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_10&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-名刺注文をするときの“気になることTOP5”に入ってくる名刺の…</span></a>
+					</li>
+					<!-- 6 ~ 10 -->
+					<li>◆ うまく利用すればコストはDOWN！効率はUP！<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_11&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-かつては名刺を作る際に、名刺製作にかかる費用を比較できる情報が少なく…</span></a>
+					</li>
+					<li>◆ 商品タグ【ブランドイメージを向上させる名脇役！】<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_12&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-人気のブランドはどれも、明確なブランドイメージを打ち出しています…</span></a>
+					</li>
+					<li>◆ トレカ【多くの人に親しまれるトレカの作り方は？】<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_13&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-名刺とはビジネスマンにとって最もといっても過言ではないほど大切なものになって…</span></a>
+					</li>
+					<li>◆ 封筒【デザインデータが無くても封筒注文が簡単にできると？】<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_14&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-アドプリントは、低コストかつ豊富なテンプレートが選べる「封筒データ作成…</span></a>
+					</li>
+					<li>◆ お客様の注目を浴びる卓上POPとは？<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_15&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-卓上POPは主に飲食店などで売上増加に貢献する販促手段として用いられて…</span></a>
+					</li>
+					<!-- 11 ~ 15 -->
+					<li>◆ 名刺のデザイン【少しの工夫で初対面の印象をアップ！】<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_16&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-デザイン関系の業種の方やフリーランスの方に人気の「小口染め」加工…</span></a>
+					</li>
+					<li>◆ 高級用紙で差を付ける！ワンランク上の名刺製作が紙質がポイント<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_17&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-個人としての印象や、企業のアピールに大きく関わる名刺。ワンランク上…</span></a>
+					</li>
+					<li>◆ 名刺の英語表記について（名前・会社名・部署名・役職名・電話番号・住所）<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_18&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-姓が先（Ado Taro）か、名が先か（Taro Ado）をはじめ、姓と名の間に…</span></a>
+					</li>
+					<li>◆ 名刺の豆知識【 国ごとの名刺文化の違い】<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_19&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-日本は名刺の使用率が世界でも最も高い国だと言われています。初対面で…</span></a>
+					</li>
+					<li>◆ 名刺の豆知識【名刺の始まりはどこから？】<br>
+						<a href="http://www.adprint.jp/Partner/Page?contentsCode=COLUMN_20&joinerId=245"><span style="border-bottom: 1px dashed #cccccc;margin-top:10px;display:block;color:#4e88cf;font-size:0.938em;padding-bottom: 12px;">-日本は世界でも最も頻繁に名刺を用いる国だといわれています。今やビジネス場で…</span></a>
+					</li>
+					<!-- 16 ~ 20 -->
+				</ul>
+			</div>
+			<img src="img_mobile/footer.png" alt="footer" style="width:340px;"/>
+			<br><br><br>
+		</div>
+		<script type="text/javascript" src="./js_pc/idangerous.swiper.js"></script>
+		<script type="text/javascript" src="./js_pc/pipe.js"></script>
+	</body>
+</html>

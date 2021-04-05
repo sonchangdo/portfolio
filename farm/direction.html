@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>팜스토리_2</title>
+        <script src="js/prefixfree.min.js"></script>
+        <link rel="stylesheet" href="css/style.css" />
+       
+    
+    </head>
+    
+    <style>
+     
+     article > img:nth-child(2){
+     	    position: absolute;
+		    right: 240px;
+		    top: 36px;
+     }
+    
+    article > #line_gray {
+	    width:100%;
+	    height:5px;
+    	background:url('./img/line_gray.png')no-repeat;
+    }
+    
+    article > #text0 {
+    	padding-left:10px;
+    	padding-top:30px;
+    }
+    
+    article > #text0 {
+    	position:relative;
+    }
+    
+    article > #text0 > img {
+    	position:absolute;
+	    left: -7px;
+   	    top: 31px;
+    }
+    
+    article > #text0 > p {
+	    font-family: 'dotum';
+	    color: #666;
+	    font-size: 11px;
+	    margin-top:4px;
+	    margin-bottom:3px;
+    }
+    
+    #text0 > strong {
+    	margin-bottom:10px;
+    	color:#666;
+    }
+    
+    #comeon {
+    	position:relative;
+    	padding-top:18px;
+    }
+    
+    #comeon > img {
+    	position:absolute;
+	    left: -7px;
+   	    top: 19px;
+    }
+    
+    #comeon > strong {
+    	margin-left:9px;
+    	padding-top:10px;
+    	color:#666;
+    }
+    #comeon > div {
+    	padding-top:10px;
+    }
+    </style>
+    
+    <body>
+    
+        <div id="wrapper">
+        
+             <!--header영역-->
+      <header>
+        
+	      <a href="index.html"><img src="img/logo.png" alt="로고" /></a>
+	         
+	      <ul class="gnb">
+	            
+	      	   <li><a href="hello.html"><strong>팜스토리</strong></a></li>
+		            <li><a href="#"><strong>장보기</strong></a></li>
+		            <li><a href="#"><strong>농작물이야기</strong></a></li>
+		            <li><a href="#"><strong>이벤트</strong></a></li>
+		            <li><a href="#"><strong>커뮤니티</strong></a></li>
+	      </ul>
+	         
+	      <div class="lnb">
+	            <span><a href="#">홈 |</a></span>
+	            <span><a href="#">회원가입 |</a></span>
+	            <span><a href="#">로그인 |</a></span>
+	            <span><a href="#">고객센터</a></span>
+	         
+	      </div>
+         
+      </header>
+	     <!--content영역-->
+	     <div id="content">
+             
+                 <div class="bg">
+                     <img src="./img/sub_page_img_tit1.png" alt="introduce"/>
+                 </div>
+                 
+                 <section>
+	                 <aside>
+	                     <img src="img/sub_aside_tit1.png" alt="팜스토리소개" />
+	                     
+	                     <ul>
+	                        <li ><a href="hello.html"><strong>인사말</strong></a></li>
+	                        <li class="on"><a href="direction.html"><strong>찾아오시는길</strong></a></li>
+	                     </ul>
+	                   
+	                 </aside>
+	                 <article>
+	                     
+	                         <img src="img/comeon.png" alt="찾아오시는" />
+	                         <img src="img/sub_page_nav_ico.gif" alt="네비" />
+	                         <div id="line_gray"></div>
+	                          <p id="intro"> HOME > 팜스토리소개 > <span><strong>찾아오시는길</span></strong></p>
+	                         
+	                         <div id="text0">
+	                         	<img src="img/gray_point.gif" alt="회색상자">
+		                         <strong style="font-size:12px">팜스토리</strong></br>
+									<p>주소: 경기도 이천시 잘한다고 신난다동 123</p> 
+									<p>전화: 02-8765-4321 </p>
+							 </div>
+							 
+							 <div id="comeon">
+							 
+							 <img src="img/gray_point.gif" alt="회색상자">
+		                         <strong style="font-size:12px">찾아오시는길</strong></br>
+	                         	<!-- * Daum 지도 - 지도퍼가기 -->
+								<!-- 1. 지도 노드 -->
+								<div id="daumRoughmapContainer1469084682672" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+								
+								<!--
+									2. 설치 스크립트
+									* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+								-->
+								<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+								
+								<!-- 3. 실행 스크립트 -->
+								<script charset="UTF-8">
+									new daum.roughmap.Lander({
+										"timestamp" : "1469084682672",
+										"key" : "c4dv",
+										"mapWidth" : "762",
+										"mapHeight" : "402"
+									}).render();
+								</script>
+	                         </div>
+	                         
+	                    
+	                    
+	                 </article>
+                 </section>
+                 
+         </div><!--content끝-->
+             <!--footer영역-->
+        <footer> 
+		      <img src="img/footer_logo.png"alt="logo" />           
+			          <P>
+			                (주)안조은 / 사업자등록번호 123-45-67890 / 통신판매신고 제 2016호 / 등록번호 더조은 1234 / 발행인: 엄홍식<br />
+			                     대표: 엄홍식 / 개인정보관리자: 엄홍식 / ☎ 051)234-5678 / 부산광역시 부산진구 부전동 123-45 6층<br />
+			                <span>Copyright ⓒ <strong>(주)더조은</strong> All rights reserved.</span>      
+			          </P>
+      
+        </footer>
+        
+        
+        
+        </div><!--wrapper의 끝-->
+    
+    </body>
+</html>

@@ -1,0 +1,401 @@
+<html lang="jp">
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<head>
+    <meta charset="UTF-8">
+    <title>postcard_LP02</title>
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.9.0/js/lightbox-plus-jquery.min.js"></script>
+
+
+<style>
+		
+		.vspace_5 {padding:5px 0 0 0;}
+		.vspace_10 {padding:10px 0 0 0;}
+		.vspace_15 {padding:15px 0 0 0;}
+		.vspace_20 {padding:20px 0 0 0;}
+		.vspace_30 {padding:30px 0 0 0;}
+		.vspace_40 {padding:40px 0 0 0;}
+
+		#wrapper {
+			width: 1000px;
+			height: 100%;
+			margin: 0 auto;
+			background:#EEEEEE;
+		}
+
+		.lb-data .lb-close {
+			display: block;
+			float: right;
+			width: 30px;
+			height: 30px;
+			background: url('/UploadData/Files/20170911_152804_DMEM1.png') top right no-repeat;
+			text-align: right;
+			outline: 0;
+			filter: alpha(Opacity=70);
+			opacity: .7;
+			-webkit-transition: opacity .2s;
+			-moz-transition: opacity .2s;
+			-o-transition: opacity .2s;
+			transition: opacity .2s
+		}
+		.lb-data .lb-close:hover {cursor: pointer;filter: alpha(Opacity=100);opacity: 1;}
+		.lb-loader, .lightbox {text-align: center;line-height: 0;}
+		.lb-dataContainer:after, .lb-outerContainer:after {	content: "";clear: both;}
+		.lightboxOverlay {position: absolute;top: 0;left: 0;z-index: 9999;background-color: #000;filter: alpha(Opacity=80);
+			opacity: .8;
+			display: none
+		}
+		.lightbox {
+			position: absolute;
+			left: 0;
+			width: 100%;
+			z-index: 10000;
+			font-weight: 400
+		}
+		.lightbox .lb-image {
+			display: block;
+			height: auto;
+			max-width: inherit;
+			max-height: none;
+			border-radius: 3px;
+			border: 4px solid #fff
+		}
+		.lightbox a img {
+			border: none
+		}
+		.lb-outerContainer {
+			position: relative;
+			width: 250px;
+			height: 250px;
+			margin: 0 auto;
+			border-radius: 4px;
+			background-color: #fff
+		}
+		.lb-loader, .lb-nav {
+			position: absolute;
+			left: 0
+		}
+		.lb-outerContainer:after {
+			display: table
+		}
+		.lb-loader {
+			top: 43%;
+			height: 25%;
+			width: 100%
+		}
+		.lb-cancel {
+			display: block;
+			width: 32px;
+			height: 32px;
+			margin: 0 auto;
+			background: url(../images/loading.gif) no-repeat
+		}
+		.lb-nav {
+			top: 0;
+			height: 100%;
+			width: 100%;
+			z-index: 10
+		}
+		.lb-container > .nav {
+			left: 0
+		}
+		.lb-nav a {
+			outline: 0;
+			background-image: url(data:image/gif;base64,R0lGODlhAQABAPAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==)
+		}
+		.lb-dataContainer {
+			margin: 0 auto;
+			padding-top: 5px;
+			width: 100%;
+			-moz-border-radius-bottomleft: 4px;
+			-webkit-border-bottom-left-radius: 4px;
+			border-bottom-left-radius: 4px;
+			-moz-border-radius-bottomright: 4px;
+			-webkit-border-bottom-right-radius: 4px;
+			border-bottom-right-radius: 4px
+		}
+		.lb-dataContainer:after {
+			display: table
+		}
+		.lb-data {
+			padding: 0 4px;
+			color: #ccc
+		}
+		.lb-data .lb-details {
+			width: 85%;
+			float: left;
+			text-align: left;
+			line-height: 1.1em
+		}
+		.lb-data .lb-caption {
+			font-size: 13px;
+			font-weight: 700;
+			line-height: 1em
+		}
+		.lb-data .lb-caption a {
+			color: #4ae
+		}
+		.lb-data .lb-number {
+			display: none !important;
+			clear: left;
+			padding-bottom: 1em;
+			font-size: 12px;
+			color: #999
+		}
+
+		#size_test > div {
+			width: 235px;
+			height: 235px;
+			background: #fff;
+			box-shadow:1px 1px 1px #9c9c9c;
+			box-sizing: border-box;
+			display: inline-block;
+			margin-left: 8px;
+		}
+		#order_product{
+			background:#eeeeee;
+			position:relative;
+			height:4650px;
+		}
+		#sample {
+			background:#f9f6ed;
+		}
+		.sample_box{width:860px;margin:0 auto;}
+		.sample_box >div{
+			width:280px;
+			display:inline-block;
+			margin:10px auto;
+		}
+		.sample_box > div:nth-child(2){margin-right:4px;}
+		.sample_box > div:nth-child(3){margin-right:4px;}
+        #calendar_hagaki > img:hover{ opacity:0.8; }
+	</style>
+</head>
+
+<div id="wrapper">　<!--<img src="https://www.adprint.jp/UploadData/Files/20171130_093510_7SSP3.jpg" 변경배너 <a href="#3000coupon" style="display:block;"><img src="https://www.adprint.jp/UploadData/Files/20171031_155909_6PKIO.png" alt="年賀状割引クーポンquick" style="padding:0px; display:block;"></a> -->
+			<img src="https://www.adprint.jp/UploadData/Files/20171130_201157_DV625.jpg" alt="はがき年賀状テンプレートバナー" style="padding:0px; display:block;">
+			
+			<img src="https://www.adprint.jp/UploadData/Files/20171031_193843_SN729.png" alt="アドプリントの年賀状はここがポイント！" style="padding:0px; display:block;">
+<a href="https://www.adprint.jp/Partner/Page?contentsCode=CALENDAR_HAGAKI&amp;joinerId=245" target="_blank" id="calendar_hagaki">
+<img src="https://www.adprint.jp/UploadData/Files/20171201_183336_QRO8P.png"> </a>
+			<a name="3000coupon"></a>
+			<img src="https://www.adprint.jp/UploadData/Files/20171031_141047_0F0SL.png" alt="3,000円分のポイントクーポン" style="display: inline-block; margin-top: -4px;">
+			<!-- 1000円分のポイントクーポン -->
+			<div id="nenga_template">
+			<img src="https://www.adprint.jp/UploadData/Files/20171031_174109_2MDVR.png" alt="年賀状テンプレート横型" style="margin-left: 175px; margin-top:20px;">	
+			<div class="vspace_20"></div>
+			<img src="https://www.adprint.jp/UploadData/Files/20171031_165254_OIB1Q.png" alt="横型文句" style="margin-left:30px;">	
+			<div class="vspace_15"></div>
+			<div id="size_test">
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_165351_OTET6.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_165331_TJKFE.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_1"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_165445_KQPJH.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_165410_HJD0Q.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_2"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_165528_STUUV.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_165507_5OSKK.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_3"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_165623_G285H.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_165600_9DRG8.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_4"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_170316_BPM4C.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_170254_WD6WM.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_5"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_170404_GPE97.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_170343_TB5Y4.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_6"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_170555_GRET9.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_170502_6CQ5F.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_7"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_170952_FJMUP.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_170930_OUHLA.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_8"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171014_RE4CK.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171014_RE4CK.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_9"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171133_LSRLE.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171113_BKHVN.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_10"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171214_HQDVT.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171156_LVO7Q.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_11"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171313_2W25X.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171255_VLFKP.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_12"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171350_KIF4W.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171334_49AJ3.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_13"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171426_KAVFJ.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171409_HLIX1.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_14"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_171702_L0OWI.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_171449_10IUE.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_15"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_190006_6764Y.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_190045_MI7KB.png" style="padding-top:36.5px;" alt="はがき年賀状テンプレートイメージ_16"></a>
+				</div>
+			</div>
+			<div class="vspace_40"></div>
+			<img src="https://www.adprint.jp/UploadData/Files/20171031_151046_LNRBO.png" alt="縦型" style="margin-left:30px;">	
+			<div class="vspace_20"></div>
+
+			<div id="size_test">
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_151518_2H23C.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_151355_AV3CJ.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_17"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_151721_UVRWT.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_151703_08G6P.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_18"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_151754_77LEF.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_151738_XSLY7.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_19"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_151920_UGU8K.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_151854_RJBRX.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_20"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152000_WCGET.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_151942_46TC7.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_21"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152259_6530W.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152111_LBP1Q.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_22"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152332_6XRT0.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152316_OR352.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_23"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152405_J9MEH.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_185341_VUYQU.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_24"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152445_HHRDS.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152424_FMD3A.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_25"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152520_3EDO6.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152502_U8GCA.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_26"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152552_59H3E.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152536_89GME.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_27"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152630_JULI6.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152613_M64V0.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_28"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152701_SLV1A.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152645_N30WP.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_29"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152758_0Y5P6.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152718_J0W03.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_30"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152830_UAU66.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152813_TW0YF.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_31"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_152958_20U8T.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_152932_LG6F6.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_32"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_153159_BL9CE.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_153134_S245Q.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_33"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_153355_7QI7P.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_153217_8AA8M.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_34"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_155430_F2EFC.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_155412_DS507.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_35"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_155509_58AD9.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_155450_GD2RR.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_36"></a>
+				</div>
+				<p></p>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_155547_0OKM4.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_155526_2HLBX.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_37"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_155715_XQXVQ.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_155606_NBST2.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_38"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_155747_JWMRE.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_155730_0MLCI.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_39"></a>
+				</div>
+				<div>
+					<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_155826_NS0MF.png" data-lightbox="example-1"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_155806_7W5YW.png" style="padding-left:37px;" alt="はがき年賀状テンプレートイメージ_40"></a>
+				</div>
+			</div>
+			</div>
+			<!-- 受賞作品見るの  -->
+			<div class="vspace_30"></div>
+			<a href="https://www.adprint.jp//www.adprint.jp/Partner/Page?contentsCode=NENGA_CONTEST_ANNOUNCE&amp;joinerId=245" target="_blank"><img src="https://www.adprint.jp/UploadData/Files/20171031_184959_EAR94.png" alt="年賀状結果発表ページはこちら！" style="box-shadow: 0px 1px 3px #666666;"></a>
+			<div class="vspace_40"></div>
+			<div id="order_product">
+				<div class="vspace_15"></div>
+				<img src="https://www.adprint.jp/UploadData/Files/20171031_142827_PDUGJ.png" alt="価格検索方法" style="margin-left:225px;">
+				<div class="vspace_40"></div>
+				<div class="vspace_10"></div>
+				<img src="https://www.adprint.jp/UploadData/Files/20171031_142723_DUQXO.png" alt="注文の方法イメージ_1" style="margin-left:62px; position:absolute; z-index: 3;">
+				<img src="https://www.adprint.jp/UploadData/Files/20171031_142740_VVGG4.png" alt="注文の方法イメージ_2" style="margin-left:62px; position:absolute; z-index: 1; margin-top:2330px;">
+				<img src="https://www.adprint.jp/UploadData/Files/20171031_142805_BLL2D.png" alt="注文の方法イメージ_3" style="position:absolute; z-index:5; margin-top:4030px; ">
+			</div>
+			<div class="vspace_40"></div>
+			<a href="https://www.adprint.jp//www.adprint.jp/OrderMall/Order/TotalOrder.aspx?makeDay=254&amp;color=F14%2FB24&amp;unit=100&amp;goodsId=25735&amp;width=100&amp;height=148&amp;orgprice=2070&amp;price=1660&amp;codepath=PTPAPB&amp;priceid=2356562&amp;strMaterial=MATTNOCOATING" target="blank"><img src="https://www.adprint.jp/UploadData/Files/20171031_141130_E7WA9.png" alt="はがきの注文ページはこちら！"></a>
+			<div id="sample">
+				<div class="vspace_20"></div>
+				<img src="https://www.adprint.jp/UploadData/Files/20171031_151028_L49UA.png" alt="制作例紹介" style="margin-left:220px;">
+				<div class="vspace_40"></div>
+				
+				
+				<div class="sample_box">
+					<img src="https://www.adprint.jp/UploadData/Files/20171031_143405_U1DCH.png" alt="一般紙質">
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_143501_3K2P3.png" data-lightbox="example-1" data-title="原料を化学パルプ100％で製造された用紙のことで一般的にコピー用紙としてよく見かけられます。塗料は塗布されていませんので表面に光沢感がなく、筆記性に優れているため、鉛筆・ペンなどで文字などを書き込むことが可能です。また、スタンプ（印鑑）の捺印に適している材質です。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_143518_AWH8G.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="上質紙180kg"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_143536_M6E99.png" alt="上質紙180kg">
+					</div>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_143551_A4XSI.png" data-lightbox="example-1" data-title="マット系の塗工紙で、コート紙より光沢感を抑えた用紙です。白地の光沢感は少ないですが、印刷した面はやや光沢感があり、彩度感を高めるとともに色の再現性に優れています。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_143618_IJ9L1.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="マットコート220㎏（ラミネート無）"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_143729_5XWWT.png" alt="マットコート220㎏（ラミネート無）">
+					</div>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_143756_P3JBG.png" data-lightbox="example-1" data-title="コート紙より光沢感を抑えたマットコート紙にマットPP加工処理をし、マットコート紙の色の再現性は保ちながら耐久性や耐水性を強化した仕上げになります。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_143814_PNL7J.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="マットコート220㎏（ラミネート有）"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_143830_XI66E.png" alt="マットコート220㎏（ラミネート有）">
+					</div>
+					<p></p>
+					<img src="https://www.adprint.jp/UploadData/Files/20171031_143422_252H6.png" alt="高級紙質1">
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_143851_IQ3HJ.png" data-lightbox="example-1" data-title="鮮やかなゴールドパールが角度によってメタリックな光を醸し出します。温かみのあるパール加工が鮮明で独創的な印象を与えます。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_143907_DWULT.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="スタードリーム 206kg"></a>
+					<img src="https://www.adprint.jp/UploadData/Files/20171031_191701_83VST.png" alt="スタードリーム 206kg">
+					</div>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_143945_OIL8M.png" data-lightbox="example-1" data-title="白色の紙に薄い銀のパール加工をして上品で高級感あふれる材質です。個性的なデザインを演出できる一品です。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_144003_OEP2J.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="キーカルアイス 172kg"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144019_XXL2E.png" alt="キーカルアイス 172kg">
+					</div>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_144037_VWQRP.png" data-lightbox="example-1" data-title="淡いアイボリー色の紙に細かいラメ加工を施した、表面が滑らかな材質です。ほのかな輝きがあるため、見る角度によって印象が違って見えます。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_144103_GKBCQ.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="ポップセット 206kg"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144130_FL8FM.png" alt="ポップセット 206kg">
+					</div>
+					<p></p>
+					<img src="https://www.adprint.jp/UploadData/Files/20171031_143440_NPKQY.png" alt="高級紙質2">
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_144151_EMOX8.png" data-lightbox="example-1" data-title="柔らかい白色で、表面に微細な凹凸エンボス加工が施されており、上品な質感を味わえます。高級感のある仕上がりを実現できる材質です。※ 正式名：ニューラグリンS（スノー）"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_144206_0B3WY.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="スコットランド189㎏"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144230_RBU0Y.png" alt="スコットランド189㎏">
+					</div>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_144255_D1QVC.png" data-lightbox="example-1" data-title="色の再現性に優れていて波立つようなエンボス加工を施した高級感のある材質です。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_144309_E3IK0.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="ビレッジ 172kg"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144334_YH8H6.png" alt="ビレッジ 172kg">
+					</div>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_144354_XFMB1.png" data-lightbox="example-1" data-title="発色が良く、柔らかな質感が高級感をさらに引き立たせる材質です。ファンシーペーパーで最高の印刷効果を出せるよう紙に特殊加工を施しております。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_144426_VEBAK.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="バンヌーボ 160kg"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144448_6UPLD.png" alt="バンヌーボ 160kg">
+					</div>
+					<p style="margin-bottom:-15px;"></p>
+					<div style="position:relative;">
+						<a class="example-image-link" href="https://www.adprint.jp/UploadData/Files/20171031_144512_GM32I.png" data-lightbox="example-1" data-title="片面に羽のような紙の繊維が漉着込まれた、和紙のような風合いを出せるファンシーペーパーです。和紙の風味を出せるにはシンプルなデザインがオススメです。★注意点★ ベタ面印刷の場合、繊維のところの印刷が剥がれることがあります。予めご了承ください。"><img class="example-image" src="https://www.adprint.jp/UploadData/Files/20171031_144539_S7OVY.png" style="width: 238px;position:absolute;left: 20px;top: 22px; position:absolute;" alt="しこくてんれい180kg"></a>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144700_Q97SE.png" alt="しこくてんれい180kg">
+					</div>
+					<div>
+					 <img src="https://www.adprint.jp/UploadData/Files/20171031_144715_AF2DT.png" alt="はがきの取り扱い用紙一覧" style="margin-bottom: -1px; margin-left:3px;">
+					</div>
+					<p style="margin-bottom: 30px;"></p>
+					</div>
+				<img src="https://www.adprint.jp/UploadData/Files/20171031_141024_ITIG4.png" alt="3,000円分のポイントクーポン" style="display:block; padding:0px;">
+			</div>
+		</div>

@@ -1,0 +1,163 @@
+#wrapper {
+     width:100%;
+ }
+ 
+/* 헤더 */
+ header {
+     width:100%;
+     height:100px;
+     background-color: #fefefe;
+     background-image: url('../img/header_bg.png');
+     background-repeat: repeat-x;
+     background-position: bottom;
+ }
+ 
+ header > div {
+     position:relative;
+     width:1000px;
+     height:100px;
+     margin:0 auto;
+ }
+ 
+ header .lnb {
+     float:right;
+     margin-right:10px;
+     margin-top:5px;
+ }
+ 
+ header .gnb {
+     position:absolute;
+     bottom:0px;
+     width:1000px;
+     height:28px;
+     z-index:10;
+ }
+ 
+ header .gnb >a {
+     float:left;
+     display:block;
+     width:200px;
+     height:28px;
+     text-align:center;
+     color:white;
+     font-weight: bold;
+     line-height:28px;
+     border-right:1px solid white;
+     box-sizing:border-box;
+ }
+ 
+ header .gnb > a:first-child{
+     border-left:  1px solid white;
+ } 
+ 
+ header .gnb > nav{
+     position:absolute;
+     width:1000px;
+     height:28px;
+     background: #becedb;
+     bottom:0px;
+     z-index: -10;
+     transition-duration:0.2s;
+ }
+ 
+ header .gnb > nav:hover{
+   bottom: -28px;
+ }
+ 
+ /* ~ 은 형제선택 태그(a를 올렸을때 nav가 선택)*/
+ header .gnb > a:hover ~ nav {
+     bottom:-28px;
+ }
+ 
+ header .gnb > nav > ul {
+     position:absolute;
+     width:220px;
+     height:28px;
+     padding-top:6px;
+ }
+ 
+ .gnb > nav > ul:nth-child(1) {
+     left:40px;
+ }
+ 
+ .gnb > nav > ul:nth-child(2) {
+     left:210px;
+ }
+ 
+ .gnb > nav > ul:nth-child(3) {
+     left:470px;
+     
+ }
+ 
+ .gnb > nav > ul:nth-child(4) {
+     left:600px;
+ }
+ 
+ .gnb > nav > ul:nth-child(5) {
+     right:0px;
+ }
+ 
+ 
+ header .gnb > nav li {
+     float:left;
+     display:none;
+     
+ }
+ 
+ header .gnb > nav a {
+     display:inline-block;
+     width:55px;
+     height:18px;
+     font-size:11px;
+     font-weight:bold;
+     color:white;
+     text-align:center;
+     box-sizing:border-box;
+     line-height: 18px;
+ }
+ 
+ .gnb > a:nth-child(1):hover ~nav > ul:nth-child(1) > li {
+     display:block;
+ }
+ 
+ .gnb > nav > ul:nth-child(1):hover > li {
+     display:block;
+ }
+ 
+ .gnb > a:nth-child(2):hover ~nav > ul:nth-child(2) > li {
+     display:block;
+ }
+ 
+ .gnb > nav > ul:nth-child(2):hover > li {
+     display:block;
+ }
+ 
+ .gnb > a:nth-child(3):hover ~nav > ul:nth-child(3) > li {
+     display:block;
+ }
+ 
+ .gnb > nav > ul:nth-child(3):hover > li {
+     display:block;
+ }
+ 
+ .gnb > a:nth-child(4):hover ~nav > ul:nth-child(4) > li {
+     display:block;
+ }
+ 
+ .gnb > nav > ul:nth-child(4):hover > li {
+     display:block;
+ }
+ 
+ .gnb > a:nth-child(5):hover ~nav > ul:nth-child(5) > li {
+     display:block;
+ }
+ 
+ .gnb > nav > ul:nth-child(5):hover > li {
+     display:block;
+ }
+ 
+ .gnb > nav > ul > li > a:hover{
+     color:#333333;
+     
+ }
+             

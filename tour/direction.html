@@ -1,0 +1,52 @@
+  <? include('_header.html');  ?>    
+         	
+         	<div id="submain">
+         	       <div class="g1">
+         	           
+         	           <div><img src="./img/sub_top_img.png" alt="Resort Style" /></div>
+         	           <section>
+         	               <aside>
+         	                   <img src="./img/sub4_aside_tit.gif" alt="인사말배너"/>
+         	                  <a href="direction.html"><img src="./img/sub4_btn_menu1.jpg" alt="인사말배너"/></a>
+         	                   <a href="direction.html"><img src="./img/sub4_btn_menu2.gif" alt="인사말배너"/></a>
+         	                   <a href="direction.html"><img src="./img/sub4_btn_menu3.gif" alt="인사말배너"/></a>
+         	               </aside>
+         	               <article>
+         	                 <div id="sub1">
+         	                    <img src="./img/sub4_menu3_tit.png" alt="인사말중앙" />
+         	                    <p><strong>Location</strong> > introduction > <span id="ment">오시는길</span></p>
+         	                 </div>
+         	                 <div id="sub2">
+	         	                    <!-- * Daum 지도 - 지도퍼가기 -->
+									<!-- 1. 지도 노드 -->
+									<div id="daumRoughmapContainer1466659284220" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+									
+									<!--
+										2. 설치 스크립트
+										* 지도 퍼가기 서비스를 2개 이상 넣을 경우, 설치 스크립트는 하나만 삽입합니다.
+									-->
+									<script charset="UTF-8" class="daum_roughmap_loader_script" src="http://dmaps.daum.net/map_js_init/roughmapLoader.js"></script>
+									
+									<!-- 3. 실행 스크립트 -->
+									<script charset="UTF-8">
+										new daum.roughmap.Lander({
+											"timestamp" : "1466659284220",
+											"key" : "bi2g",
+											"mapWidth" : "765",
+											"mapHeight" : "468"
+										}).render();
+								</script>
+								<img src="./img/img2972.gif" alt="지도안내">
+         	                  </div>
+         	                    
+         	                   
+         	               </article>
+         	               
+         	           </section>
+         	      
+         	       </div>
+         	      
+             </div>
+         	
+        
+  <? include('_footer.html');  ?>    

@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="웹 퍼블리셔 4년차 손창도의 포트폴리오입니다.">
+  <meta name="author" content="Son">
+  <script src="https://kit.fontawesome.com/29725e03a1.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" type="images/png" href="imgs/favicon.png"  >
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
+  <title>손창도 포트폴리오</title>
+</head>
+<body>
+  <!--navbar-->
+  <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-sun"></i>
+        <a href="javascript:void(0);">Sonsang</a>
+      </div>
+      <ul class="navbar__menu">
+              <li class="navbar__menu__item active" data-link="#home">Home</li>
+              <li class="navbar__menu__item" data-link="#about">About</li>
+              <li class="navbar__menu__item" data-link="#skills">Skills</li>
+              <li class="navbar__menu__item" data-link="#work">My work</li>
+<!--              <li class="navbar__menu__item" data-link="#experience">Experience</li>-->
+              <li class="navbar__menu__item" data-link="#contact">Contact</li>
+      </ul>
+      <!--toggle button-->
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+  </nav>
+  <!--HOME--> 
+  <section id="home" class="section">
+    <div class="home__container">
+      <img src="imgs/avatar.png" class="home__avatar"/>
+      <h1 class="home__title">안녕하세요: )<br />웹 퍼블리셔 <span>손창도입니다.</span></h1>
+      <h2 class="home__description">こんにちは！<br />よろしくお願いいたします。</h2>
+      <button class="home__contact">CONTACT ME</button>
+    </div>
+  </section>
+  <!--About-->
+  <section id="about" class="section section__container profile">
+    <h1>About me</h1>
+    <div class="about__wrap">
+        <div class="about__majors">
+            <div class="photo-wrap">
+                <img src="imgs/son_profile.jpg">
+            </div>
+        </div>
+        <div class="about__jobs">
+            <div class="profile">
+                <h3>Profile</h3>
+                <p class="p-list">이름 : 손창도</p>
+                <p class="p-list">나이 : 32세 (1990.02.26)</p>
+                <p class="p-list">주소 : 서울시 관악구</p>
+                <p class="p-list">연락처 : 010-9747-3303</p>
+                <p class="p-list">카카오톡 : pkok505@naver.com</p>
+                <p class="p-list">E-mail : pkok501@naver.com</p>
+            </div>
+            <div class="profile">
+                <h3>History</h3>
+                <p class="p-list">2016.11 ~ 2018.10 : <span>(주)티쿤글로벌 일본사업1부 UI팀</span></p>
+                <p class="p-list">2018.11 ~<span> (주)베러웨이시스템즈 웹1팀</span></p>
+            </div>
+            <div class="profile">
+                <h3>License</h3>
+                <p class="p-list">JLPT 1급</p>
+                <p class="p-list">운전면허 1종 보통</p>
+                <p class="p-list">GTQ 포토샵 1급</p>
+                <p class="p-list">컴퓨터 활용 능력 2급</p>
+            </div>
+        </div>
+    </div>
+  </section>
+  <!--Skills-->
+  <section id="skills" class="section">
+    <section class="section__container">
+    <h1>Skills</h1>
+    <h2>Skills & Attributes</h2>
+<!--
+    <p>Hold up, if you wanna go and take a ride with me Better hit me, baby, one more time<br />
+        Paint a picture for you and me Of the days when we were young<br />
+        Singing at the top of both our lungs</p>
+-->
+    <div class="skillset">
+      <div class="skillset__left">
+        <h3 class="skillset__title">Skills</h3>
+        <div class="skill">
+          <div class="skill__description">
+            <span>HTML</span>
+            <span>95%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:95%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>CSS</span>
+            <span>90%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:90%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>JavaScript & Jquery</span>
+            <span>75%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:75%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>PhotoShop & Illustrator</span>
+            <span>80%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:80%;"></div>
+          </div>
+        </div>
+        <div class="skill">
+          <div class="skill__description">
+            <span>Empty</span>
+            <span>75%</span>
+          </div>
+          <div class="skill__bar">
+            <div class="skill__value" style="width:75%;"></div>
+          </div>
+        </div>
+      </div>
+      <div class="skillset__right">
+        <div class="tools">
+          <h3 class="skillset__title">전문기술</h3>
+          <ul class="tools__list">
+              <li><span>웹 표준, 크로스 브라우징, 반응형 웹, 인터렉티브 웹,</span></li>
+              <li><span>SASS, LESS, Google 애널리틱스,  SEO</span></li>
+          </ul>
+        </div>
+        <div class="etc">
+          <h3 class="skillset__title">Etc</h3>
+          <ul class="etc__list">
+            <li><span>Zeplin, moqups, Sketch</span></li>
+            <li><span>Final Cut Pro</span></li>
+            <li><span>Adobe Premiere Pro</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    </section>
+  </section>
+  <!--Work-->
+  <section id="work" class="section">
+    <section class="section__container">
+
+
+    <h1>My work</h1>
+    <h3>projects</h3>
+    <div class="work__categories">
+      <button class="category__btn selected" data-filter="*">All<span class="category__count">6</span></button>
+      <button class="category__btn" data-filter="PC">PC<span class="category__count">2</span></button>
+      <button class="category__btn" data-filter="Mobile">Mobile<span class="category__count">2</span></button>
+      <button class="category__btn" data-filter="ResponsiveWeb">Responsive Web<span class="category__count">2</span></button>
+    </div>
+    <div class="work__projects">
+      <a href="https://www.redprinting.co.kr/ko" class="project" target="_blank" data-type="PC">
+        <img src="imgs/thumbnail__1.jpg" alt="레드프린팅" class="project__img"/>
+        <div class="project__description">
+          <h3>레드프린팅</h3>
+          <p><span>기여도 : 100%</span><br>
+           PC / 전체페이지 / html5, css3, j-Query, Javascript 하드코딩<br>2018.11~
+           <i>※ All Slide, scrollIntoView, getBoundingClientRect, Dim,<br>Depth Menu, Tab, Modal, Video-Popup, Twitter-embeded etc.</i>
+            </p>
+        </div>
+      </a>
+      <a href="https://www.adprint.jp/Product/sub/pn.aspx?Code=pn" class="project" target="_blank" data-type="Mobile">
+        <img src="imgs/thumbnail__2.png" alt="애드프린트_서브메인" class="project__img"/>
+        <div class="project__description">
+          <h3>애드프린트 - jp</h3>
+            <p><span>기여도 : 100%</span><br>
+           PC / 서브메인, 상품 페이지 / html5, css3, j-Query 하드코딩<br>2016.10~
+           <i>※ Slide, Depth Menu, Tab, Modal, Design, Sns etc.</i></p>
+        </div>
+      </a>
+      <a href="https://www.oneprint.jp" class="project" target="_blank" data-type="ResponsiveWeb">
+        <img src="imgs/thumbnail__3.jpg" alt="원프린트" class="project__img"/>
+        <div class="project__description">
+          <h3>원 프린트 - jp</h3>
+          <p><span>기여도 : 100%</span><br>반응형 / 전체페이지 / html5, css3, j-Query, Javascript 하드코딩<br>2019.12~
+          <i>※ Mobile hamburger menu, All Slide, scrollDown, Depth Menu,<br>Tab, Video-Popup, Twitter-embeded etc.</i></p>
+        </div>
+      </a>
+      <a href="https://www.makumaku.jp/" class="project" target="_blank" data-type="Mobile">
+        <img src="imgs/thumbnail__4.jpg" alt="마쿠마쿠" class="project__img"/>
+        <div class="project__description">
+          <h3>마쿠마쿠 - jp</h3>
+           <p><span>기여도 : 50%</span><br>PC / 전체페이지 / html5, css3, j-Query 하드코딩<br>2020.06~
+           <i>※ BX Slide, tab, modal</i></p>
+        </div>
+      </a>
+      <a href="link_page/new_nc/new_nc.html" class="project" target="_blank" data-type="PC">
+        <img src="imgs/thumbnail__6.png" alt="명함서브01" class="project__img"/>
+        <div class="project__description">
+          <h3>명함 서브메인01</h3>
+          <p><span>기여도 : 100%</span><br>
+           PC / 메인페이지 / 각 상품 페이지 / html5, css3, j-Query
+           <i>※ BX Slide, All design</i></p>
+        </div>
+      </a>
+
+      <a href="link_page/new_nc_02/new_nc_02.html" class="project" target="_blank" data-type="ResponsiveWeb">
+        <img src="imgs/thumbnail__5.png" alt="명함서브02" class="project__img"/>
+        <div class="project__description">
+          <h3>명함 서브메인02</h3>
+          <p><span>기여도 : 100%</span><br>반응형 / 전체페이지 / html5, css3, j-Query, Javascript
+          <i>※ Swiper Slide, All design</i></p>
+          
+        </div>
+      </a>
+      <!--
+      <a href="javascript:void(0);" class="project" target="_blank" data-type="PC">
+        <img src="imgs/thumbnail__7.png" alt="empty" class="project__img"/>
+        <div class="project__description">
+          <h3>예비 사이트</h3>
+          <span>경력을 더 많이 쌓아 주석을 풀자!!</span>
+        </div>
+      </a>
+      -->
+    </div>
+  </section>
+  </section>
+ 
+  
+  <!--experience-->
+<!--
+  <section id="experience" class="section section__container">
+    <h1>Experience</h1>
+   <div class="testimonial">
+      <img src="https://www.adprint.jp/PartnerData/53/PartnerInfo/2020/10/19/e1inzxfu.znh.png" alt="RIP" class="experience__avatar">
+      <div class="testimonial__speech-bubble">
+        <p>근무 기간 : 2016-10-11 ~ 2018-10-31<br>담당 업무 : 애드프린트 사이트 유지 보수 관리</p>
+        <p class="name">(주)티쿤글로벌</p>
+      </div>
+    </div>
+    <div class="testimonial">
+      <div class="testimonial__speech-bubble">
+        <p>근무 기간 : 2018-11-01 ~ <br>담당 업무 : 레드프린팅, 애드프린트, 원프린트, 마쿠마쿠 사이트 제작 및 유지 보수 관리</p>
+        <p class="name">(주)베러웨이 시스템즈</p>
+      </div>
+      <img src="https://s3-ap-northeast-2.amazonaws.com/redprintingweb.common/2017/img/common/logo1.svg" alt="RIP" class="experience__avatar">
+    </div>
+  </section>
+-->
+  <!--Contact-->
+  <section id="contact" class="section section__container">
+    <h1 class="contact__title">Contact</h1>
+    <div class="contact__links">
+      <a href="tel:+821097473303" alt="phone">
+          <i class="fas fa-mobile-alt"></i>
+          <span>010-9747-3303</span>
+      </a>
+      <a href="mailto:pkok501@naver.com" alt="email">
+          <i class="far fa-envelope"></i>
+          <span>pkok501@naver.com</span>
+      </a>
+<!--
+      <a href="javascript:void(0);" alt="facebook">
+          <i class="fab fa-facebook-square"></i>
+      </a>
+-->
+    </div>
+    <p class="contact__rights">
+      2021 Sonchangdo - All rights reserved
+    </p>
+  </section>
+<!--Arrow up-->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+</body>
+</html>
+
+

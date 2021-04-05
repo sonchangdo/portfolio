@@ -1,0 +1,21 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ul,ol {
+    list-style:none;
+}
+
+a {
+    text-decoration: none;
+    color:#333;
+  }
+
+img {
+    border:0;
+    }
+
+body {
+    font: 12px '고딕';
+     }
